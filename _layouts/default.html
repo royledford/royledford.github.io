@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 
     </head>
     <body>
@@ -15,7 +15,7 @@
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            <!-- <a class="extra" href="/">home</a> -->
           </div>
 
           {{ content }}
@@ -24,15 +24,13 @@
           <div class="footer">
             <div class="contact">
               <p>
-                Your Name is<br />
-                What You Are<br />
-                you@example.com
+                GitHub Page<br />
+                roy@royledford.com
               </p>
             </div>
             <div class="contact">
               <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+                <a href="https://github.com/royledford">github.com/royledford</a><br />
               </p>
             </div>
           </div>
