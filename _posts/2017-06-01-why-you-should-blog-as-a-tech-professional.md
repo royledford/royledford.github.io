@@ -6,7 +6,7 @@ categories: blog
 ---
 I've recently started blogging, in fact this is my first real blog post. I have written some posts previously for companies that I have worked at, but those were specific to that company. I've never done it for my own personal benefit however.
 
-This isn't to say that I have never written publicly regarding my personal career. I was a frequent contributor to many online newsgroups and discussion groups in the past.
+This isn't to say that Io have never written publicly regarding my personal career. I was a frequent contributor to many online newsgroups and discussion groups in the past.
 
 I wanted to talk a little about why I feel it is important that I start and why you should too.
 
