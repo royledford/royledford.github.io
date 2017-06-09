@@ -781,3 +781,9 @@ hr {
   display: flex;
   min-height: 100vh;
   padding: 50px; }
+
+.home-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding: 50px; }
