@@ -3,29 +3,43 @@ header
   background-color: white
   margin: 0
   padding: 0
+  margin-bottom: 15px
+
+.nav-bar
+  width: 100%
+  text-align: right
 
   .logo
-    // +hide-text
-    // background:
-    //   image: url(/assets/img/logo.svg)
-    margin: 0
+    +hide-text
+    background:
+      image: url('/assets/img/logo.png')
+      size: contain
+      repeat: no-repeat
+    margin: 10px 0px 0px 10px
+    display: inline-block
+    float: left
+    height: 65px
+    // padding: 15px
 
-
-.nav
   ul
     list-style: none
     margin: 0
     padding: 0
-    float: right
+    // float: right
+    display: inline-block
+    text-align: center
+    vertical-align: top
 
   li
     float: left
+    display: inline
 
     &:hover
       background-color: $nav-hover
 
   .active
       background-color: $nav-active
+      // border-bottom: 2px solid $nav-active
 
 
   a
