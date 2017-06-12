@@ -846,6 +846,39 @@ header {
     width: 266px;
     margin: 0 23px; }
 
+.home-hero {
+  height: 600px;
+  background-image: url("/assets/img/car-bg.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.col-1-center {
+  margin: auto;
+  width: 100%; }
+
+.hero-title {
+  left: 175px;
+  top: 170px;
+  color: white;
+  font-size: 5em;
+  margin: 0;
+  position: relative;
+  display: block; }
+  @media (max-width: 730px) {
+    .hero-title {
+      font-size: 3em; } }
+
+.lead-in {
+  left: 300px;
+  top: 250px;
+  font-size: 2em;
+  color: white;
+  position: relative; }
+  @media (max-width: 730px) {
+    .lead-in {
+      top: 0px;
+      font-size: 1.5em; } }
+
 .col-3 {
   background-color: pink;
   max-width: 333px; }
