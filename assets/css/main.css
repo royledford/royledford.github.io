@@ -628,17 +628,44 @@ section.home-hero {
     text-align: right;
     color: white; }
 
-.home-work .col-320 {
-  background-color: pink; }
+section.home-work .work-thumb {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 266px;
+  background-size: cover;
+  overflow: hidden; }
+
+section.home-work .work-meta {
+  position: absolute;
+  background: rgba(15, 22, 40, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  -webkit-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
+  transition: all 150ms ease-in-out; }
+  section.home-work .work-meta .name {
+    font-size: 25px; }
+  section.home-work .work-meta .description {
+    font-style: italic; }
+
+section.home-work .work-thumb:hover .work-meta {
+  -webkit-transform: translate(0%, 70%);
+          transform: translate(0%, 70%); }
 
 @media (max-width: 980px) {
-  .home-work .hide-on-mobile {
+  section.home-work .hide-on-mobile {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important; } }
 
 @media (max-width: 680px) {
-  .home-work .flex {
+  section.home-work .flex {
     -ms-flex-flow: column;
         flex-flow: column;
     -ms-flex-align: center;
