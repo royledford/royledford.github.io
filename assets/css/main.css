@@ -856,36 +856,32 @@ header {
   margin: 0 23px; }
 
 .push-right {
-  left: 320; }
+  margin-left: 320px; }
 
 .hide {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important; }
 
-.home-hero {
+section.home-hero {
   height: 600px;
   background-image: url("/assets/img/car-bg.jpg");
   background-size: cover;
-  background-position: center center; }
-
-.hero-title {
-  color: white;
-  font-size: 5em; }
-
-.lead-in {
-  color: white; }
+  background-position: right center; }
+  section.home-hero .col-320 {
+    width: 600px;
+    margin: 10px;
+    padding-top: 75px; }
+  section.home-hero .hero-title {
+    color: white;
+    font-size: 5em; }
+  section.home-hero .lead-in {
+    margin: 0;
+    padding: 50px;
+    font-size: 1.8em;
+    text-align: right;
+    color: white; }
 
 .home-work .col-320 {
   background-color: pink;
   max-width: 333px; }
-
-@media (max-width: 960px) {
-  .hide-on-mobile {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important; } }
-
-@media (max-width: 640px) {
-  .flex {
-    display: block; } }

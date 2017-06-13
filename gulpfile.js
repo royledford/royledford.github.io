@@ -37,7 +37,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
         server: {
             baseDir: '_site'
         },
-        notify: false
+        // notify: false
     });
 });
 
@@ -56,11 +56,16 @@ gulp.task('jade', function () {
  */
 gulp.task('sass', function () {
     // return gulp.src('assets/css/main.sass')
-    gulp.src('assets/css/main.sass')
-        .pipe(sass({
-            includePaths: ['css'],
-            onError: browserSync.notify
+    return gulp.src('assets/css/main.sass')
+      .pipe(sass().on('error', function(err) {
+          console.error(err.message);
+          browserSync.notify(err.message, 3000); // Display error in the browser
+          this.emit('end'); // Prevent gulp from catching the error and exiting the watch process
         }))
+        // .pipe(sass({
+        //     includePaths: ['css'],
+        //     onError: browserSync.notify
+        // }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
