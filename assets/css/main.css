@@ -641,7 +641,8 @@ section.home-hero {
   height: 600px;
   background-image: url("/assets/img/car-bg.jpg");
   background-size: cover;
-  background-position: right center; }
+  background-position: right center;
+  background-attachment: fixed; }
   section.home-hero .col-320 {
     width: 600px;
     margin: 10px;
