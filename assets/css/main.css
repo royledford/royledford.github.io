@@ -550,16 +550,22 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
-header {
-  background-color: white;
-  margin: 50;
-  padding: 0; }
-
 .nav-bar {
   width: 100%;
   text-align: right;
-  height: 75px; }
-  .nav-bar .logo {
+  top: 0;
+  height: 75px;
+  position: fixed;
+  background-color: white;
+  transition: top 0.2s ease-in-out; }
+
+.nav-up {
+  top: -75px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul .logo {
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;
@@ -567,26 +573,25 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     margin: 10px 0px 0px 10px;
-    display: inline-block;
     float: left;
     height: 60px;
     width: 60px; }
-  .nav-bar .nav-block {
+  ul .nav-block {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: static;
     float: right;
     display: inline-block;
     text-align: center;
     vertical-align: top; }
-  .nav-bar li {
-    float: left;
-    display: inline; }
-    .nav-bar li:hover {
+  ul li {
+    display: inline-block; }
+    ul li:hover {
       background-color: #0f1628; }
-  .nav-bar .active {
+  ul .active {
     background-color: #eee; }
-  .nav-bar a {
+  ul a {
     display: block;
     color: efefef;
     text-align: center;
@@ -594,11 +599,11 @@ header {
     text-decoration: none;
     font-size: 20px; }
     @media (max-width: 370px) {
-      .nav-bar a {
+      ul a {
         font-size: 18px;
         padding: 20px 20px; } }
   @media (max-width: 370px) {
-    .nav-bar .logo {
+    ul .logo {
       height: 50px;
       width: 50px; } }
 

@@ -3,24 +3,26 @@ $( document ).ready(function() {
   //-----------------------------------------
   // Setup var and handle window scroll events
   //-----------------------------------------
-  var scrolled = false;
+  var didScroll = false;
+  var lastScrollTop = 0; // used by header scroll
+
   $(window).scroll(function(event) {
-    scrolled = true;
+    didScroll = true;
   });
 
   // only call our functions on an interval to not interfere with user scrolling
   setInterval(function() {
-    if (scrolled) {
-      windowScrolled();
-      scrolled = false;
+    if (didScroll) {
+      windowdidScroll();
+      didScroll = false;
     }
   }, 150);
 
-  function windowScrolled() {
+  function windowdidScroll() {
 
     // Place calls to functions that react to window scrolling here.
     launchWorkSection();
-
+    headerScroll();
 
   };
 
@@ -35,8 +37,36 @@ $( document ).ready(function() {
 
     if (scrollPosition >= (workTop / 4)) {
       $('.work-wrap').addClass('launched');
-    }
-  }
+    };
+  };
+
+  //-----------------------------------------
+  // hide the header when scrolling down, show when scrolling up
+  //-----------------------------------------
+  function headerScroll() {
+    var delta = 5;
+    var navbarHeight = $('.nav-bar').outerHeight();
+    var st = $(this).scrollTop();
+
+    // console.log('lst:' + lastScrollTop + ' st:' + st + ' d:' + delta);
+    // console.log(Math.abs(lastScrollTop - st) <= delta);
+
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.nav-bar').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.nav-bar').removeClass('nav-up').addClass('nav-down');
+          };
+        };
+        lastScrollTop = st;
+      };
 
 
   //-----------------------------------------

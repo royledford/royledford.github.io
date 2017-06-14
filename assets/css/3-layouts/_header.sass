@@ -1,13 +1,22 @@
+$header-height: 75px
+
 header
-  background-color: white
-  margin: 50
-  padding: 0
 
 .nav-bar
   width: 100%
   text-align: right
-  height: 75px
+  top: 0
+  height: $header-height
+  position: fixed
+  background-color: white
+  transition: top 0.2s ease-in-out;
 
+.nav-up
+  top: -$header-height
+
+ul
+  margin: 0
+  padding: 0
 
   .logo
     +hide-text
@@ -16,24 +25,23 @@ header
       size: contain
       repeat: no-repeat
     margin: 10px 0px 0px 10px
-    display: inline-block
     float: left
     height: 60px
     width: 60px
-    // padding: 15px
+
 
   .nav-block
     list-style: none
     margin: 0
     padding: 0
+    position: static
     float: right
     display: inline-block
     text-align: center
     vertical-align: top
 
   li
-    float: left
-    display: inline
+    display: inline-block
 
     &:hover
       background-color: $nav-hover
@@ -41,8 +49,6 @@ header
   .active
       background-color: $nav-active
       // border-bottom: 2px solid $nav-active
-
-
   a
     display: block
     color: efefef
