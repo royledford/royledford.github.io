@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
   //-----------------------------------------
   // Setup var and handle window scroll events
@@ -48,25 +48,22 @@ $( document ).ready(function() {
     var navbarHeight = $('.nav-bar').outerHeight();
     var st = $(this).scrollTop();
 
-    // console.log('lst:' + lastScrollTop + ' st:' + st + ' d:' + delta);
-    // console.log(Math.abs(lastScrollTop - st) <= delta);
+    if (Math.abs(lastScrollTop - st) <= delta)
+      return;
 
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
+    // If they scrolled down and are past the navbar, add class .nav-up
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.nav-bar').removeClass('nav-down').addClass('nav-up');
+    if (st > lastScrollTop && st > navbarHeight) {
+      // Scroll Down
+      $('.nav-bar').removeClass('nav-down').addClass('nav-up');
     } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.nav-bar').removeClass('nav-up').addClass('nav-down');
-          };
-        };
-        lastScrollTop = st;
+      // Scroll Up
+      if (st + $(window).height() < $(document).height()) {
+        $('.nav-bar').removeClass('nav-up').addClass('nav-down');
       };
+    };
+    lastScrollTop = st;
+  };
 
 
   //-----------------------------------------
@@ -74,9 +71,9 @@ $( document ).ready(function() {
   //-----------------------------------------
   $(".navbutton").click(function() {
     var $this = $(this);
-      // $("#ccc").toggle().animate();
-      $this.toggleClass('active');
-      $this.siblings().removeClass("active");
+    // $("#ccc").toggle().animate();
+    $this.toggleClass('active');
+    $this.siblings().removeClass("active");
   });
 
 

@@ -557,10 +557,12 @@ hr {
   height: 75px;
   position: fixed;
   background-color: white;
-  transition: top 0.2s ease-in-out; }
+  transition: top 0.2s ease-in-out;
+  z-index: 1;
+  border-bottom: solid #23325a 1px; }
 
 .nav-up {
-  top: -75px; }
+  top: -76px; }
 
 ul {
   margin: 0;
@@ -731,3 +733,10 @@ section.home-work .work-wrap {
         flex-flow: column;
     -ms-flex-align: center;
         align-items: center; } }
+
+section.home-blog {
+  height: 600px;
+  background-image: url("/assets/img/laptop-bg.jpg");
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed; }

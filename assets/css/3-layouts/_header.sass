@@ -1,4 +1,5 @@
 $header-height: 75px
+$header-border-height: 1px
 
 header
 
@@ -9,10 +10,12 @@ header
   height: $header-height
   position: fixed
   background-color: white
-  transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out
+  z-index: 1
+  border-bottom: solid $medium-blue 1px
 
 .nav-up
-  top: -$header-height
+  top: -$header-height - $header-border-height
 
 ul
   margin: 0
