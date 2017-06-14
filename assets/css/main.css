@@ -660,7 +660,8 @@ section.home-work .title {
   text-align: center;
   font-size: 50px;
   margin: 0;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  color: #23325a; }
 
 section.home-work .align-center {
   text-align: center;
@@ -669,6 +670,9 @@ section.home-work .align-center {
 
 section.home-work a {
   font-size: 20px; }
+
+section.home-work .col-320 {
+  overflow: hidden; }
 
 section.home-work .work-wrap {
   margin: auto;

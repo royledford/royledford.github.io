@@ -14,7 +14,7 @@ $( document ).ready(function() {
       windowScrolled();
       scrolled = false;
     }
-  }, 250);
+  }, 150);
 
   function windowScrolled() {
 
