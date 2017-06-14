@@ -44,7 +44,7 @@ $(document).ready(function() {
   // hide the header when scrolling down, show when scrolling up
   //-----------------------------------------
   function headerScroll() {
-    var delta = 5;
+    var delta = 30;
     var navbarHeight = $('.nav-bar').outerHeight();
     var st = $(this).scrollTop();
 

@@ -761,7 +761,7 @@ section.home-blog {
   section.home-blog .blog-wrap {
     background-color: rgba(100, 100, 255, 0.5);
     border-radius: 10px;
-    margin: 20px; }
+    margin: 20px 0 20px 0; }
   section.home-blog .blog-title {
     color: white;
     padding: 10px;
@@ -772,3 +772,9 @@ section.home-blog {
     padding: 10px;
     margin: 0;
     margin-right: 10px; }
+  @media (max-width: 980px) {
+    section.home-blog .blog-column {
+      width: 75%; } }
+  @media (max-width: 370px) {
+    section.home-blog .blog-column {
+      width: 95%; } }
