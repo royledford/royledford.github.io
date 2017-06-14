@@ -75,16 +75,12 @@ gulp.task('sass', function () {
 
 gulp.task('js', function() {
   gulp.src('assets/js/functions.js')
-    //   .pipe(sass({)
-    // .pipe(concat('script.js'))
-    // .pipe(browserify())
-    // .pipe(gulpif(env === 'production', uglify()))
     .pipe(gulp.dest('_site/assets/js'))
 });
 
 
 /**
- * Watch scss files for changes & recompile
+ * Watch files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
