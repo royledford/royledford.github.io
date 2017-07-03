@@ -556,7 +556,7 @@ hr {
   top: 0;
   height: 75px;
   position: fixed;
-  background-color: white;
+  background-color: #1e2632;
   transition: top 0.2s ease-in-out;
   z-index: 1;
   border-bottom: solid #23325a 1px; }
@@ -564,10 +564,10 @@ hr {
 .nav-up {
   top: -76px; }
 
-ul {
+ul.nav-list {
   margin: 0;
   padding: 0; }
-  ul .logo {
+  ul.nav-list .logo {
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;
@@ -578,7 +578,7 @@ ul {
     float: left;
     height: 60px;
     width: 60px; }
-  ul .nav-block {
+  ul.nav-list .nav-block {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -587,25 +587,24 @@ ul {
     display: inline-block;
     text-align: center;
     vertical-align: top; }
-  ul li {
+  ul.nav-list li {
     display: inline-block; }
-    ul li:hover {
+    ul.nav-list li:hover {
       background-color: #0f1628; }
-  ul .active {
+  ul.nav-list .active {
     background-color: #eee; }
-  ul a {
+  ul.nav-list a {
     display: block;
-    color: efefef;
     text-align: center;
     padding: 20px 25px;
     text-decoration: none;
     font-size: 20px; }
     @media (max-width: 370px) {
-      ul a {
+      ul.nav-list a {
         font-size: 18px;
         padding: 20px 20px; } }
   @media (max-width: 370px) {
-    ul .logo {
+    ul.nav-list .logo {
       height: 50px;
       width: 50px; } }
 
@@ -778,3 +777,24 @@ section.home-blog {
   @media (max-width: 370px) {
     section.home-blog .blog-column {
       width: 95%; } }
+
+.contactbar {
+  height: 75px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #1e2632;
+  list-style: none; }
+  .contactbar .contacticons {
+    margin: 0;
+    padding: .5em;
+    display: inline-block;
+    font-size: 1.8em;
+    color: #435ea8; }
+    .contactbar .contacticons a {
+      color: #435ea8;
+      padding: 0.5em; }
+      .contactbar .contacticons a:hover {
+        background-color: #0f1628; }
+  .contactbar .float-right {
+    float: right; }

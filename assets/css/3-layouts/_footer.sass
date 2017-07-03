@@ -1,0 +1,29 @@
+// add mixin and media query http://w3bits.com/sass-mixins/
+//    http://engageinteractive.co.uk/blog/top-10-scss-mixins
+
+
+.contactbar
+  height: 75px
+  margin: 0
+  padding: 0
+  text-align: center
+  background-color: $backgrounds
+  list-style: none
+
+  .contacticons
+    // float: center
+    margin: 0
+    padding: .5em
+    display: inline-block
+    font-size: 1.8em
+    color: $light-blue
+
+    a
+      color: $light-blue
+      padding: 0.5em
+
+      &:hover
+        background-color: $nav-hover
+
+  .float-right
+    float: right

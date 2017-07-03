@@ -9,13 +9,14 @@ title: Roy Ledford
 
   <div class="home-sections">
 
-    {% include hero.html %}
+    {% include home-hero.html %}
     {% include home-work.html %}
     {% include home-blog.html %}
 
-    <!-- <div style="height: 2000px;"></div> -->
-
   </div>
+
+  {% include footer.html %}
+
   <!-- <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
