@@ -12,33 +12,18 @@
 
         <!-- Fonts -->
         <script src="https://use.fontawesome.com/f340752ddd.js"></script>
-
-
     </head>
     <body>
 
         <div class="site">
-          <!-- <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div> -->
+
+          {% include header.html %}
 
           {{ content }}
 
+          {% include footer.html %}
 
-          <!-- <div class="footer">
-            <div class="contact">
-              <p>
-                GitHub Page<br />
-                roy@royledford.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/royledford">github.com/royledford</a><br />
-              </p>
-            </div>
-          </div> -->
+
         </div>
 
         <script src="/assets/js/jquery-3.2.1.min.js"></script>
