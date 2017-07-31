@@ -1,4 +1,14 @@
 // $(document).ready(function() {
+
+  function showMobileNav() {
+    var x = document.getElementsByClassName("landing-nav");
+    // alert(x[0].className);
+    if (x[0].className === "landing-nav") {
+        x[0].className += " show-mobile-nav";
+    } else {
+        x[0].className = "landing-nav";
+    }
+};
 //
 //   //-----------------------------------------
 //   // Setup var and handle window scroll events
@@ -78,4 +88,4 @@
 //
 //
 //
-// });
+// }); //_on ready
