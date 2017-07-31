@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,700|Quicksand:300,400,500,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -389,23 +390,10 @@ template {
 [hidden] {
   display: none; }
 
-@font-face {
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  src: url("https://fonts.googleapis.com/css?family=Lato:400,700,900"); }
-
-@font-face {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://fonts.googleapis.com/css?family=Merriweather+Sans"); }
-
 body {
   background-color: white;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Merriweather Sans', sans-serif;
-  color: #333;
   -webkit-text-size-adjust: 100%; }
 
 .button,
@@ -503,36 +491,14 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
-.gigantic, .huge, .large, .bigger, .big,
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #444; }
+
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
+  font-family: 'Cabin', sans-serif;
+  color: #444;
   font-weight: bold; }
-
-.gigantic {
-  font-size: 110px;
-  line-height: 1.09;
-  letter-spacing: -2px; }
-
-.huge, h1 {
-  font-size: 68px;
-  line-height: 1.05;
-  letter-spacing: -1px; }
-
-.large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
-
-.bigger, h3 {
-  font-size: 26px;
-  line-height: 1.38; }
-
-.big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
-
-.small, small {
-  font-size: 10px;
-  line-height: 1.2; }
 
 p {
   margin: 0 0 20px 0; }
@@ -544,11 +510,84 @@ strong {
   font-weight: bold; }
 
 hr {
-  border: solid #ddd;
+  border: solid #222;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
+
+.center-vertical {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+nav .landing-nav {
+  position: absolute;
+  width: 33%;
+  height: 100%;
+  left: 66%; }
+  nav .landing-nav .navbutton {
+    position: relative;
+    height: 33%;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    nav .landing-nav .navbutton:not(:last-child)::after {
+      content: "";
+      background: #f2f2f2;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      height: 2px;
+      width: 95%; }
+    nav .landing-nav .navbutton a {
+      font-size: 8vw;
+      color: #f2f2f2; }
+
+@media (max-width: 767px) {
+  nav .landing-nav {
+    left: 100%;
+    background-color: blue; } }
+
+section#landing {
+  position: absolute;
+  width: 66%;
+  height: 100%; }
+  section#landing .landing-wrap {
+    height: 100%; }
+    section#landing .landing-wrap::after {
+      content: "";
+      background: #f2f2f2;
+      position: absolute;
+      bottom: 5%;
+      left: 100%;
+      height: 90%;
+      width: 2px; }
+  section#landing .lead {
+    color: #f2f2f2;
+    position: absolute;
+    font-size: 12vw;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    display: block;
+    text-align: center; }
+  section#landing h1 {
+    width: 100%; }
+
+@media (max-width: 767px) {
+  section#landing {
+    width: 100%;
+    background-color: blue; } }
 
 .nav-bar {
   width: 100%;
@@ -556,10 +595,10 @@ hr {
   top: 0;
   height: 75px;
   position: fixed;
-  background-color: #202f59;
+  background-color: #f2f2f2;
   transition: top 0.2s ease-in-out;
   z-index: 1;
-  border-bottom: solid #23325a 1px; }
+  border-bottom: solid #f2f2f2 1px; }
 
 .nav-up {
   top: -76px; }
@@ -671,7 +710,7 @@ section.home-work {
     font-size: 50px;
     margin: 0;
     padding-bottom: 50px;
-    color: #23325a; }
+    color: #f2f2f2; }
   section.home-work .align-center {
     text-align: center;
     margin: 0;
@@ -700,7 +739,7 @@ section.home-work {
       overflow: hidden; }
     section.home-work .work-wrap .work-meta {
       position: absolute;
-      background: rgba(15, 22, 40, 0.7);
+      background: rgba(242, 242, 242, 0.7);
       top: 0;
       right: 0;
       bottom: 0;
@@ -783,16 +822,16 @@ section.home-blog {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #202f59;
+  background-color: #f2f2f2;
   list-style: none; }
   .contactbar .contacticons {
     margin: 0;
     padding: .5em;
     display: inline-block;
     font-size: 1.8em;
-    color: #435ea8; }
+    color: #444; }
     .contactbar .contacticons a {
-      color: #435ea8;
+      color: #444;
       padding: 0.5em; }
       .contactbar .contacticons a:hover {
         background-color: #87a5ff; }
