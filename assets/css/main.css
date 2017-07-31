@@ -709,8 +709,7 @@ section.home-work {
       padding: 10px;
       text-align: center;
       -webkit-transform: translate(0%, 100%);
-              transform: translate(0%, 100%);
-      transition: all 150ms ease-in-out; }
+              transform: translate(0%, 100%); }
       section.home-work .work-wrap .work-meta .name {
         font-size: 25px; }
       section.home-work .work-wrap .work-meta .description {
