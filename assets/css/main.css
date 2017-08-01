@@ -551,9 +551,14 @@ nav .landing-nav {
       left: 10%;
       height: 2px;
       width: 90%; }
-    nav .landing-nav .navbutton a {
+    nav .landing-nav .navbutton .nav-link {
       font-size: 8vw;
-      color: #f2f2f2; }
+      color: #f2f2f2;
+      letter-spacing: normal;
+      transition: all 1500ms ease-in-out; }
+      nav .landing-nav .navbutton .nav-link:hover {
+        letter-spacing: 10px;
+        color: #d9d9d9; }
   nav .landing-nav .close-icon {
     display: none; }
 
@@ -591,12 +596,14 @@ section#landing {
   section#landing .lead {
     color: #f2f2f2;
     position: absolute;
-    font-size: 12vw;
+    font-size: 9vw;
     padding: 0;
     margin: 0;
     white-space: nowrap;
     display: block;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
   section#landing h1 {
     width: 100%; }
   section#landing .icon {

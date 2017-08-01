@@ -27,9 +27,15 @@ nav
         height: 2px
         width: 90%
 
-      a
+      .nav-link
         font-size: 8vw
         color: $light-gray
+        letter-spacing: normal
+        transition: all 1500ms ease-in-out
+
+        &:hover
+          letter-spacing: 10px
+          color: darken($light-gray, 10%)
 
     .close-icon
       display: none
