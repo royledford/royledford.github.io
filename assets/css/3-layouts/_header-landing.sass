@@ -4,10 +4,11 @@ nav
     width: 33%
     height: 100%
     left: 66%
+    background-color: white
 
     .navbutton
       position: relative
-      height: 33%
+      height: 33.3%
       font-family: 'Cabin', sans-serif
       font-weight: 600
       text-align: center
@@ -29,11 +30,24 @@ nav
         font-size: 8vw
         color: $light-gray
 
+    .close-icon
+      display: none
 
   @media(max-width: 767px)
     .landing-nav
+      position: absolute
       left: 100%
-      background-color: blue
+      z-index: 1
 
     .landing-nav.show-mobile-nav
-      left: 66%
+      left: 33.3%
+      width: 66.6%
+      border-left: 2px solid $light-gray
+
+    .landing-nav .close-icon
+      display: block
+      position: absolute
+      right: 10px
+      padding-left: 10px
+      padding-top: 10px
+      z-index: 5

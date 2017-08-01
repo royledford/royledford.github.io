@@ -1,6 +1,6 @@
 // $(document).ready(function() {
 
-  function showMobileNav() {
+  function toggleMobileNav() {
     var x = document.getElementsByClassName("landing-nav");
     // alert(x[0].className);
     if (x[0].className === "landing-nav") {
