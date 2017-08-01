@@ -1,8 +1,8 @@
 section#who
   position: absolute
-  width: $landing-two-thirds:
+  width: $landing-third
   height: 33.3%
-  left: $landing-two-thirds:
+  left: $landing-two-thirds
   background-color: blue
   color: white
   transition: all 300ms ease-in-out
@@ -11,7 +11,7 @@ section#who
 section#who.show
   left: 0
   height: 100%
-  width: $landing-two-thirds:
+  width: $landing-two-thirds
 
   // .landing-wrap
   //   height: 100%
@@ -30,8 +30,14 @@ section#who.show
 @media(max-width: 767px)
   section#who
     width: 100%
+    left: 100%
 
-  section#who .icon
+  .home-wrap section#who .icon
     display: block
     float: right
     margin: 10px
+
+  section#who.show
+    left: 0
+    height: 100%
+    width: 100%

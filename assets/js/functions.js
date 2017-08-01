@@ -2,18 +2,34 @@
 
 
 // -----------------------------------------------------------
-// Landing navbar clicks
+// Handle click events
 // -----------------------------------------------------------
-document.addEventListener('click', function(e) {
+var siteWrapper = document.querySelector(".site");
+
+siteWrapper.addEventListener('click', function(e) {
+  if (e.target === e.currentTarget) {
+    return;
+  }
     e = e || window.event;
     var target = e.target || e.srcElement
-        // text = target.textContent || text.innerText;
+    var text = target.textContent || target.innerText;
+
+    // Manage clicks for various items below.
     if (target.classList.contains("nav-link")) {
       setActiveLandingNav(target);
       showHiddenLandingPane(target);
+      if (target.parentNode.parentNode.classList.contains("show-mobile-nav")) {
+        toggleMobileNav();
+      }
     }
-}, false);
 
+    if (target.classList.contains("close-icon-link")
+        || target.classList.contains("show-icon-link")) {
+      toggleMobileNav();
+    }
+
+    e.stopPropagation();
+}, false);
 
 // -----------------------------------------------------------
 // Show / Hide the landing navbar when on smaller screen sizes
@@ -38,7 +54,10 @@ function showHiddenLandingPane(el) {
   var targetEl = document.getElementById(targetId);
   var siblings = getSiblings(targetEl);
 
-  targetEl.classList.toggle('show');
+  // don't change if the hidden panel is already shown
+  if (!targetEl.classList.contains('show')) {
+    targetEl.classList.toggle('show');
+  }
 
   for (i = 0; i < siblings.length; i++) {
     siblings[i].classList.remove("show");
