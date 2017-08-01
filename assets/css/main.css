@@ -527,7 +527,8 @@ nav .landing-nav {
   width: 33%;
   height: 100%;
   left: 66%;
-  background-color: white; }
+  background-color: white;
+  transition: all 400ms ease-out; }
   nav .landing-nav .navbutton {
     position: relative;
     height: 33.3%;
@@ -547,9 +548,9 @@ nav .landing-nav {
       background: #f2f2f2;
       position: absolute;
       bottom: 0;
-      left: 5%;
+      left: 10%;
       height: 2px;
-      width: 95%; }
+      width: 90%; }
     nav .landing-nav .navbutton a {
       font-size: 8vw;
       color: #f2f2f2; }
