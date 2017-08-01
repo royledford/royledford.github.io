@@ -10,6 +10,7 @@ document.addEventListener('click', function(e) {
         // text = target.textContent || text.innerText;
     if (target.classList.contains("nav-link")) {
       setActiveLandingNav(target);
+      showHiddenLandingPane(target);
     }
 }, false);
 
@@ -18,12 +19,29 @@ document.addEventListener('click', function(e) {
 // Show / Hide the landing navbar when on smaller screen sizes
 // -----------------------------------------------------------
 function toggleMobileNav() {
-  var x = document.getElementsByClassName("landing-nav");
+  var el = document.getElementsByClassName("landing-nav");
   // alert(x[0].className);
-  if (x[0].className === "landing-nav") {
-      x[0].className += " show-mobile-nav";
+  if (el[0].className === "landing-nav") {
+      el[0].className += " show-mobile-nav";
   } else {
-      x[0].className = "landing-nav";
+      el[0].className = "landing-nav";
+  }
+};
+
+
+
+// -----------------------------------------------------------
+// Show a section in the landing page
+// -----------------------------------------------------------
+function showHiddenLandingPane(el) {
+  var targetId = el.innerText.toLowerCase();
+  var targetEl = document.getElementById(targetId);
+  var siblings = getSiblings(targetEl);
+
+  targetEl.classList.toggle('show');
+
+  for (i = 0; i < siblings.length; i++) {
+    siblings[i].classList.remove("show");
   }
 };
 
@@ -34,16 +52,11 @@ function toggleMobileNav() {
 // landing page navbar
 // -----------------------------------------------------------
 function setActiveLandingNav(el) {
-  // el.siblings().removeClass('active');
   var siblings = getSiblings(el.parentNode);
-  // removeClassFromArray(siblings, "active");
-  // alert(siblings.length);
   el.classList.toggle('active');
   for (i = 0; i < siblings.length; i++) {
-    // alert(siblings[i].childNodes[0].classList);
     siblings[i].childNodes[0].classList.remove("active");
   }
-
 };
 
 
