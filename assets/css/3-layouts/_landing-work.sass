@@ -1,14 +1,16 @@
-section#who
+section#work
   position: absolute
   width: $landing-third
   height: 33.3%
   left: $landing-two-thirds
-  background-color: blue
+  top: 33%
+  background-color: green
   color: white
   transition: all 300ms ease-in-out
   z-index: 2
 
-section#who.show
+section#work.show
+  top: 0
   left: 0
   height: 100%
   width: $landing-two-thirds
@@ -29,16 +31,16 @@ section#who.show
     display: none
 
 @media(max-width: 767px)
-  section#who
+  section#work
     width: 100%
     left: 100%
 
-  .home-wrap section#who .icon
+  .home-wrap section#work .icon
     display: block
     float: right
     margin: 10px
 
-  section#who.show
+  section#work.show
     left: 0
     height: 100%
     width: 100%
