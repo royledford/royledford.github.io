@@ -1,0 +1,35 @@
+section#who
+  position: absolute
+  width: 66.6%
+  height: 33%
+  left: 100%
+  background-color: blue
+  color: white
+
+section#who.show
+  left: 0
+  height: 100%
+  // z-index: 2
+
+  // .landing-wrap
+  //   height: 100%
+  //
+  //   &::after
+  //     content: ""
+  //     background: $light-gray
+  //     position: absolute
+  //     bottom: 5%
+  //     left: 100%
+  //     height: 90%
+  //     width: 2px
+  .icon
+    display: none
+
+@media(max-width: 767px)
+  section#who
+    width: 100%
+
+  section#who .icon
+    display: block
+    float: right
+    margin: 10px

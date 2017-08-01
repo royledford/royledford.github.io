@@ -620,6 +620,28 @@ section#landing {
     float: right;
     margin: 10px; } }
 
+section#who {
+  position: absolute;
+  width: 66.6%;
+  height: 33%;
+  left: 100%;
+  background-color: blue;
+  color: white; }
+
+section#who.show {
+  left: 0;
+  height: 100%; }
+  section#who.show .icon {
+    display: none; }
+
+@media (max-width: 767px) {
+  section#who {
+    width: 100%; }
+  section#who .icon {
+    display: block;
+    float: right;
+    margin: 10px; } }
+
 .nav-bar {
   width: 100%;
   text-align: right;
