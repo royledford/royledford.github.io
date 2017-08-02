@@ -19,14 +19,23 @@ nav
       align-items: center
       justify-content: center
 
+      &::before
+        content: ""
+        background: $light-gray
+        position: absolute
+        bottom: 5%
+        left: 0
+        height: 90%
+        width: 2px
+
       &:not(:last-child)::after
         content: ""
         background: $light-gray
         position: absolute
         bottom: 0
-        left: 10%
+        left: 5%
         height: 2px
-        width: 90%
+        width: 95%
 
       .nav-link
         font-size: 8vw

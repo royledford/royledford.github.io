@@ -436,11 +436,11 @@ input[type="button"] {
     outline: 0; }
 
 a {
-  color: #f2f2f2;
+  color: #777777;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #444; }
+    color: #222; }
 
 a.link-brackets::before, a.link-brackets::after {
   display: inline-block;
@@ -493,7 +493,7 @@ body {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  color: #444; }
+  color: #222; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cabin', sans-serif;
@@ -501,7 +501,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
 p {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  color: #222; }
 
 em {
   font-style: italic; }
@@ -544,14 +545,22 @@ nav .landing-nav {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
+    nav .landing-nav .navbutton::before {
+      content: "";
+      background: #f2f2f2;
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      height: 90%;
+      width: 2px; }
     nav .landing-nav .navbutton:not(:last-child)::after {
       content: "";
       background: #f2f2f2;
       position: absolute;
       bottom: 0;
-      left: 10%;
+      left: 5%;
       height: 2px;
-      width: 90%; }
+      width: 95%; }
     nav .landing-nav .navbutton .nav-link {
       font-size: 8vw;
       color: #f2f2f2;
@@ -626,10 +635,52 @@ section#who {
   width: 34%;
   height: 33.3%;
   left: 66%;
-  background-color: blue;
   color: white;
   transition: all 300ms ease-in-out;
+  background-color: white;
+  overflow-x: hidden;
   z-index: 2; }
+  section#who .hero-image {
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+    background-image: url("/assets/img/landing-who-hero.jpg");
+    background-size: cover;
+    background-position: bottom; }
+  section#who .lead {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: #f2f2f2; }
+  section#who .contact {
+    padding: 0;
+    list-style: none;
+    color: #444;
+    text-align: center;
+    margin: 50px 0; }
+    section#who .contact li {
+      display: inline-block;
+      padding: 0 20px; }
+  section#who .social {
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    list-style: none; }
+    section#who .social li {
+      display: inline-block;
+      padding: 0 20px; }
+  section#who .copy {
+    margin: 0 20px; }
+  section#who .landing-wrap {
+    height: 100%; }
+    section#who .landing-wrap::after {
+      content: "";
+      background: #f2f2f2;
+      position: absolute;
+      bottom: 5%;
+      left: 100%;
+      height: 90%;
+      width: 2px; }
 
 section#who.show {
   left: 0;
