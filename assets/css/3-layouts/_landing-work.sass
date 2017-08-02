@@ -2,12 +2,83 @@ section#work
   position: absolute
   width: $landing-third
   height: 33.3%
+  padding: 0
+  margin: 0
   left: $landing-two-thirds
   top: 33%
-  background-color: green
+  background-color: white
   color: white
   transition: all 300ms ease-in-out
   z-index: 2
+
+  .landing-wrap
+    // display: flex
+    flex-direction: row
+    padding: 0
+    margin: 0
+    height: 100%
+
+    .gallery
+      width: 253px
+      // background-color: yellow
+      position: absolute
+      width: 95%
+      height: 100%
+
+      .gallery-col
+        display: flex
+        height: 100%
+        width: 253px
+        // display: none
+        flex-direction: column
+        justify-content: space-around
+        margin: 0
+        padding: 0
+        top: 0
+        // background-color: blue
+
+        .card
+          // flex: none
+          padding: 0
+          margin-left: 10px
+          margin-right: 10px
+          // flex-shrink: 2
+          // margin-top: 10px
+          width: 233px
+          height: 233px
+          background-color: silver
+
+          &:last-child
+            margin-bottom: 10px
+
+          .content
+            position: absolute
+            left: 275px
+            color:
+
+    .work-link
+      display: inline-block
+      padding: 0
+      margin: 0
+      position: relative
+      text-align: center
+      top: 0
+      width: 5%
+      height: 100%
+      left: 95%
+      color: black
+
+    .link-container
+      position: absolute
+      display: inline-block
+      top: 50%
+      left: -40px
+      transform: translateY(-50%)
+      transform: rotate(-90deg)
+      white-space: nowrap
+
+
+
 
 section#work.show
   top: 0
@@ -28,6 +99,7 @@ section#work.show
   //     height: 90%
   //     width: 2px
   .icon
+    float: right
     display: none
 
 @media(max-width: 767px)
