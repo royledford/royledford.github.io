@@ -1,0 +1,75 @@
+nav
+  .landing-nav
+    position: absolute
+    width: 34%
+    height: 100%
+    left: $landing-two-thirds
+    background-color: white
+    transition: all 400ms ease-out
+    z-index: 5
+
+    .navbutton
+      position: relative
+      height: 33.3%
+      font-family: 'Cabin', sans-serif
+      font-weight: 600
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+      &::before
+        content: ""
+        background: $light-gray
+        position: absolute
+        bottom: 5%
+        left: 0
+        height: 90%
+        width: 2px
+
+      &:not(:last-child)::after
+        content: ""
+        background: $light-gray
+        position: absolute
+        bottom: 0
+        left: 5%
+        height: 2px
+        width: 95%
+
+      .nav-link
+        font-size: 8vw
+        color: $light-gray
+        letter-spacing: normal
+        transition: all 1500ms ease-in-out
+
+        &:hover
+          letter-spacing: 10px
+          color: darken($light-gray, 10%)
+
+      .active
+          letter-spacing: 10px
+          color: darken($light-gray, 10%)
+
+
+    .close-icon
+      display: none
+
+  @media(max-width: 767px)
+    .landing-nav
+      position: absolute
+      left: 100%
+      z-index: 5
+
+    .landing-nav.show-mobile-nav
+      left: $landing-third
+      width: $landing-two-thirds
+      border-left: 2px solid $light-gray
+
+    .landing-nav .close-icon
+      display: block
+      position: absolute
+      right: 10px
+      padding-left: 10px
+      padding-top: 10px
+      z-index: 5

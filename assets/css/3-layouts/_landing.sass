@@ -1,0 +1,45 @@
+section#landing
+  position: absolute
+  width: $landing-two-thirds
+  height: 100%
+
+  .landing-wrap
+    height: 100%
+
+    &::after
+      content: ""
+      background: $light-gray
+      position: absolute
+      bottom: 5%
+      left: 100%
+      height: 90%
+      width: 2px
+
+  .lead
+    color: $light-gray
+    position: absolute
+    font-size: 9vw
+    padding: 0
+    margin: 0
+    white-space: nowrap
+    display: block
+    text-align: center
+    letter-spacing: 2px
+    text-transform: uppercase
+
+  h1
+    width: 100%
+
+  .icon
+    position: relative
+    display: none
+
+@media(max-width: 767px)
+  section#landing
+    width: 100%
+
+  section#landing .icon
+    display: block
+    float: right
+    margin: 10px
+    z-index: 20
