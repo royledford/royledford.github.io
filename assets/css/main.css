@@ -716,6 +716,7 @@ section#work {
   background-color: white;
   color: white;
   transition: all 300ms ease-in-out;
+  visibility: hidden;
   z-index: 2; }
   section#work .landing-wrap {
     -ms-flex-direction: row;
@@ -736,29 +737,28 @@ section#work {
         -ms-flex-direction: column;
             flex-direction: column;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
-        margin: 0;
-        padding: 0;
-        top: 0; }
+            justify-content: space-around; }
     section#work .landing-wrap .card {
       padding: 0;
       margin-left: 10px;
       margin-right: 10px;
       width: 233px;
-      height: 233px;
-      background-color: silver; }
-      section#work .landing-wrap .card:last-child {
-        margin-bottom: 10px; }
-      section#work .landing-wrap .card:hover .content {
-        display: block;
-        color: green;
-        left: 243px; }
+      height: 233px; }
       section#work .landing-wrap .card a {
         position: absolute;
         opacity: 0;
         display: block;
         width: 233px;
-        height: 233px; }
+        height: 233px;
+        z-index: 1; }
+    section#work .landing-wrap .screen {
+      position: absolute;
+      margin-top: 158px;
+      left: 10px;
+      width: 233px;
+      height: 75px;
+      background-color: white;
+      opacity: .85; }
     section#work .landing-wrap .content {
       box-sizing: border-box;
       position: absolute;
@@ -766,11 +766,10 @@ section#work {
       width: 233px;
       height: 233px;
       padding-left: 15px;
-      padding-top: 25px;
-      z-index: -1;
-      transition: all 400ms ease-in-out; }
+      padding-top: 25px; }
       section#work .landing-wrap .content h2 {
-        margin-top: 20px; }
+        margin-top: 138px;
+        margin-bottom: 5px; }
     section#work .landing-wrap .work-link {
       display: inline-block;
       padding: 0;
@@ -798,10 +797,13 @@ section#work.show {
   left: 0;
   height: 100%;
   width: 66%;
-  z-index: 3; }
+  z-index: 3;
+  visibility: visible; }
   section#work.show .icon {
+    position: relative;
     float: right;
-    display: none; }
+    display: none;
+    z-index: 20; }
 
 @media (max-width: 767px) {
   section#work {
@@ -815,6 +817,25 @@ section#work.show {
     left: 0;
     height: 100%;
     width: 100%; } }
+
+@media (min-width: 768px) {
+  section#work .card .content {
+    transition: all 400ms ease-in-out; }
+    section#work .card .content h2 {
+      margin-top: 25px; }
+  section#work .card .screen {
+    position: absolute;
+    left: 10px;
+    width: 233px;
+    height: 233px;
+    margin-top: 0;
+    background-color: white;
+    opacity: .85;
+    transition: all 400ms ease-in-out; }
+  section#work .card:hover .content {
+    left: 243px; }
+  section#work .card:hover .screen {
+    opacity: 0; } }
 
 section#write {
   position: absolute;
