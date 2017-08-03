@@ -6,8 +6,8 @@ section#landing.landing-main
 
 section#who
   .landing-wrap
-    .icon: a(href="javascript:void(0);")
-      i.fa.fa-ellipsis-h.fa-2x.show-icon-link
+    //- .icon: a(href="javascript:void(0);")
+    //-   i.fa.fa-ellipsis-h.fa-2x.show-icon-link
     .hero-image
     h1.lead Who I am
     .copy
@@ -41,8 +41,8 @@ section#who
 
 section#work
   .landing-wrap
-    .icon: a(href="javascript:void(0);")
-      i.fa.fa-ellipsis-h.fa-2x.show-icon-link
+    //- .icon: a(href="javascript:void(0);")
+    //-   i.fa.fa-ellipsis-h.fa-2x.show-icon-link
       
     .gallery
       .gallery-col
@@ -67,16 +67,31 @@ section#work
             h2 Salut
             p Design / Full Stack Development
             
-    .work-link
+    .vert-link
       .link-container
         a(href="#").link-brackets See More...
-        //- a(href="#") See More...
-
-
-
 
 section#write
   .landing-wrap
-    .icon: a(href="javascript:void(0);")
-      i.fa.fa-ellipsis-h.fa-2x.show-icon-link
-    p write
+    //- .icon: a(href="javascript:void(0);")
+    //-   i.fa.fa-ellipsis-h.fa-2x.show-icon-link
+      
+    //- .blog-wrap
+    .post
+      h2 Why I love Jade and Sass
+      p.date 2017-03-08
+      p.copy Jade (or Pug) and Sass are preprocessors from HTML and CSS. Even you have ever written either of those you know there is quite a bit of markup required.
+      
+    .post
+      h2 Why mobile first design is better.
+      p.date 2017-05-15
+      p.copy I've read about building mobile first sites and why it is best practice but never really thought about web site design that way. On a recent project, this web site actully, I really began to understand why 'mobile first' is a better strategy.
+      
+    .post
+      h2 How switched from Windows to Mac
+      p.date 2017-06-12
+      p.copy I've been a windows user for more years than I will admit to ;) It was were I started my career and the companies that I worked for were standardized on software that only ran on Windows.
+          
+  .vert-link
+    .link-container
+      a(href="#").link-brackets See More...
