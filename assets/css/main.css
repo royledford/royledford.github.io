@@ -852,9 +852,19 @@ section#write {
   transition: all 300ms ease-in-out;
   visibility: hidden;
   z-index: 2; }
+  section#write .blog-wrap {
+    padding: 50px 20px 20px 20px; }
   section#write .post {
-    margin-top: 50px;
-    margin: 25px; }
+    margin-bottom: 50px; }
+    section#write .post h2 {
+      margin-bottom: 1px; }
+    section#write .post p {
+      margin-bottom: 10px; }
+  section#write .date {
+    color: #c4c4c4;
+    margin: 0 0 10px; }
+  section#write .link-container {
+    text-align: center; }
 
 section#write.show {
   top: 0;
@@ -881,6 +891,33 @@ section#write.show {
     left: 0;
     height: 100%;
     width: 100%; } }
+
+@media (min-width: 600px) {
+  .blog-wrap {
+    margin: 0 75px; } }
+
+@media (min-width: 768px) {
+  .blog-wrap {
+    margin: 0 50px;
+    width: 400px; } }
+
+@media (min-width: 768px) {
+  .blog-wrap {
+    position: absolute;
+    width: 75%; }
+  .vert-link {
+    position: absolute;
+    top: 48vh;
+    left: 95%;
+    color: #444; }
+  .link-container {
+    position: absolute;
+    left: -40px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    white-space: nowrap; } }
 
 .nav-bar {
   width: 100%;
