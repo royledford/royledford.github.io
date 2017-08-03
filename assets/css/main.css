@@ -583,11 +583,13 @@ nav .landing-nav {
   nav .landing-nav {
     position: absolute;
     left: 100%;
-    z-index: 5; }
+    z-index: 5;
+    visibility: hidden; }
   nav .landing-nav.show-mobile-nav {
     left: 34%;
     width: 66%;
-    border-left: 2px solid #f2f2f2; }
+    border-left: 2px solid #f2f2f2;
+    visibility: visible; }
   nav .landing-nav .close-icon {
     display: block;
     position: absolute;
@@ -667,30 +669,26 @@ section#who {
     margin: 50px 0; }
     section#who .contact li {
       padding: 0 20px; }
-
-@media (min-width: 450px) {
-  section#who .contact li {
-    display: inline-block; }
-  .social {
+  section#who .social {
     padding: 0;
     text-align: center;
     white-space: nowrap;
     list-style: none; }
-    .social li {
+    section#who .social li {
       display: inline-block;
       padding: 0 20px; }
-  .copy {
+  section#who .copy {
     margin: 0 20px; }
-  .landing-wrap {
+  section#who .landing-wrap {
     height: 100%; }
-    .landing-wrap::after {
+    section#who .landing-wrap::after {
       content: "";
       background: #f2f2f2;
       position: absolute;
       bottom: 5%;
       left: 100%;
       height: 90%;
-      width: 2px; } }
+      width: 2px; }
 
 section#who.show {
   left: 0;
@@ -847,14 +845,15 @@ section#work.show {
 section#write {
   position: absolute;
   width: 34%;
-  height: 33.3%;
+  height: 33%;
   left: 66%;
   top: 66%;
   background-color: #fff;
   color: white;
   transition: all 300ms ease-in-out;
   visibility: hidden;
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
   section#write .blog-wrap {
     padding: 50px 20px 20px 20px; }
   section#write .post {
@@ -875,7 +874,8 @@ section#write.show {
   height: 100%;
   width: 66%;
   visibility: visible;
-  z-index: 3; }
+  z-index: 3;
+  overflow: auto; }
   section#write.show .icon {
     position: relative;
     float: right;
