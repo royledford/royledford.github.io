@@ -711,8 +711,6 @@ section#work {
   position: absolute;
   width: 34%;
   height: 33.3%;
-  padding: 0;
-  margin: 0;
   left: 66%;
   top: 33%;
   background-color: white;
@@ -742,18 +740,37 @@ section#work {
         margin: 0;
         padding: 0;
         top: 0; }
-        section#work .landing-wrap .gallery .gallery-col .card {
-          padding: 0;
-          margin-left: 10px;
-          margin-right: 10px;
-          width: 233px;
-          height: 233px;
-          background-color: silver; }
-          section#work .landing-wrap .gallery .gallery-col .card:last-child {
-            margin-bottom: 10px; }
-          section#work .landing-wrap .gallery .gallery-col .card .content {
-            position: absolute;
-            left: 275px; }
+    section#work .landing-wrap .card {
+      padding: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 233px;
+      height: 233px;
+      background-color: silver; }
+      section#work .landing-wrap .card:last-child {
+        margin-bottom: 10px; }
+      section#work .landing-wrap .card:hover .content {
+        display: block;
+        color: green;
+        left: 243px; }
+      section#work .landing-wrap .card a {
+        position: absolute;
+        opacity: 0;
+        display: block;
+        width: 233px;
+        height: 233px; }
+    section#work .landing-wrap .content {
+      box-sizing: border-box;
+      position: absolute;
+      left: 10px;
+      width: 233px;
+      height: 233px;
+      padding-left: 15px;
+      padding-top: 25px;
+      z-index: -1;
+      transition: all 400ms ease-in-out; }
+      section#work .landing-wrap .content h2 {
+        margin-top: 20px; }
     section#work .landing-wrap .work-link {
       display: inline-block;
       padding: 0;

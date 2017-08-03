@@ -2,8 +2,6 @@ section#work
   position: absolute
   width: $landing-third
   height: 33.3%
-  padding: 0
-  margin: 0
   left: $landing-two-thirds
   top: 33%
   background-color: white
@@ -37,24 +35,46 @@ section#work
         top: 0
         // background-color: blue
 
-        .card
-          // flex: none
-          padding: 0
-          margin-left: 10px
-          margin-right: 10px
-          // flex-shrink: 2
-          // margin-top: 10px
-          width: 233px
-          height: 233px
-          background-color: silver
+    .card
+      // flex: none
+      padding: 0
+      margin-left: 10px
+      margin-right: 10px
+      // flex-shrink: 2
+      // margin-top: 10px
+      width: 233px
+      height: 233px
+      background-color: silver
 
-          &:last-child
-            margin-bottom: 10px
+      &:last-child
+        margin-bottom: 10px
 
-          .content
-            position: absolute
-            left: 275px
-            color:
+      &:hover
+        .content
+          display: block
+          color: green
+          left: 243px
+
+      a
+        position: absolute
+        opacity: 0
+        display: block
+        width: 233px
+        height: 233px
+
+    .content
+      box-sizing: border-box
+      position: absolute
+      left: 10px
+      width: 233px
+      height: 233px
+      padding-left: 15px
+      padding-top: 25px
+      z-index: -1
+      transition: all 400ms ease-in-out
+
+      h2
+        margin-top: 20px
 
     .work-link
       display: inline-block
@@ -76,9 +96,6 @@ section#work
       transform: translateY(-50%)
       transform: rotate(-90deg)
       white-space: nowrap
-
-
-
 
 section#work.show
   top: 0
@@ -111,6 +128,7 @@ section#work.show
     display: block
     float: right
     margin: 10px
+
 
   section#work.show
     left: 0
