@@ -33,10 +33,6 @@ siteWrapper.addEventListener('click', function(e) {
       }
     }
 
-    // if (target.classList.contains("landing-text")) {
-    //   target.className += " hide";
-    // }
-
     // TWhen either the open or close icon is clicked
     if (target.classList.contains("close-icon-link")
         || target.classList.contains("open-icon-link")) {

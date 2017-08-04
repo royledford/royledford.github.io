@@ -632,8 +632,7 @@ section#landing {
   section#landing h1 {
     width: 100%; }
   section#landing .menu-icon {
-    position: relative;
-    display: none; }
+    position: relative; }
 
 @media (max-width: 767px) {
   section#landing {
