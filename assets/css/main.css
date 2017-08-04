@@ -540,6 +540,7 @@ nav .landing-nav {
   left: 66%;
   background-color: white;
   transition: all 400ms ease-out;
+  visibility: hidden;
   z-index: 5; }
   nav .landing-nav .navbutton {
     position: relative;
@@ -588,8 +589,6 @@ nav .landing-nav {
 @media (max-width: 767px) {
   nav .landing-nav {
     position: absolute;
-    left: 100%;
-    z-index: 5;
     visibility: hidden; }
   nav .landing-nav.show-mobile-nav {
     left: 34%;
@@ -603,6 +602,10 @@ nav .landing-nav {
     padding-left: 10px;
     padding-top: 10px;
     z-index: 5; } }
+
+@media (min-width: 768px) {
+  nav .landing-nav {
+    visibility: visible; } }
 
 section#landing {
   position: absolute;
@@ -632,7 +635,8 @@ section#landing {
   section#landing h1 {
     width: 100%; }
   section#landing .menu-icon {
-    position: relative; }
+    position: relative;
+    display: none; }
 
 @media (max-width: 767px) {
   section#landing {
@@ -647,14 +651,14 @@ section#landing {
 section#who {
   position: absolute;
   width: 34%;
-  height: 33.3%;
-  left: 66%;
-  color: white;
-  transition: all 300ms ease-in-out;
-  background-color: white;
+  height: 33%;
+  left: 0;
+  color: #fff;
+  background-color: #fff;
   overflow-x: hidden;
   visibility: hidden;
-  z-index: 2; }
+  z-index: 2;
+  transition: all 300ms ease-in-out; }
   section#who .hero-image {
     background-color: blue;
     width: 100%;
@@ -708,7 +712,7 @@ section#who.show {
 @media (max-width: 767px) {
   section#who {
     width: 100%;
-    left: 100%; }
+    left: 0; }
   .home-wrap section#who .icon {
     display: block;
     float: right;
@@ -718,11 +722,15 @@ section#who.show {
     height: 100%;
     width: 100%; } }
 
+@media (min-width: 768px) {
+  section#who {
+    left: 66%; } }
+
 section#work {
   position: absolute;
   width: 34%;
   height: 33.3%;
-  left: 66%;
+  left: 0;
   top: 33%;
   background-color: white;
   color: white;
@@ -818,8 +826,7 @@ section#work.show {
 
 @media (max-width: 767px) {
   section#work {
-    width: 100%;
-    left: 100%; }
+    width: 100%; }
   .home-wrap section#work .menu-icon {
     display: block;
     float: right;
@@ -846,16 +853,18 @@ section#work.show {
   section#work .card:hover .content {
     left: 243px; }
   section#work .card:hover .screen {
-    opacity: 0; } }
+    opacity: 0; }
+  section#work {
+    left: 66%; } }
 
 section#write {
   position: absolute;
   width: 34%;
   height: 33%;
-  left: 66%;
+  left: 0;
   top: 66%;
   background-color: #fff;
-  color: white;
+  color: #fff;
   transition: all 300ms ease-in-out;
   visibility: hidden;
   z-index: 2;
@@ -890,8 +899,7 @@ section#write.show {
 
 @media (max-width: 767px) {
   section#write {
-    width: 100%;
-    left: 100%; }
+    width: 100%; }
   .home-wrap section#write .menu-icon {
     display: block;
     float: right;
@@ -927,6 +935,10 @@ section#write.show {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     white-space: nowrap; } }
+
+@media (min-width: 768px) {
+  section#write {
+    left: 66%; } }
 
 .nav-bar {
   width: 100%;

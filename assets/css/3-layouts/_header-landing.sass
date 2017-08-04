@@ -6,6 +6,7 @@ nav
     left: $landing-two-thirds
     background-color: white
     transition: all 400ms ease-out
+    visibility: hidden
     z-index: 5
 
     .navbutton
@@ -58,8 +59,8 @@ nav
   @media(max-width: 767px)
     .landing-nav
       position: absolute
-      left: 100%
-      z-index: 5
+      // left: 100%
+      // z-index: 5
       visibility: hidden
 
     .landing-nav.show-mobile-nav
@@ -75,3 +76,7 @@ nav
       padding-left: 10px
       padding-top: 10px
       z-index: 5
+
+  @media(min-width: 768px)
+    .landing-nav
+      visibility: visible

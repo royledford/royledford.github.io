@@ -2,7 +2,7 @@ section#work
   position: absolute
   width: $landing-third
   height: 33.3%
-  left: $landing-two-thirds
+  left: 0
   top: 33%
   background-color: white
   color: white
@@ -107,7 +107,7 @@ section#work.show
 @media(max-width: 767px)
   section#work
     width: 100%
-    left: 100%
+    // left: 100%
 
   .home-wrap section#work .menu-icon
     display: block
@@ -147,3 +147,6 @@ section#work.show
         left: 243px
       .screen
         opacity: 0
+
+  section#work
+    left: $landing-two-thirds
