@@ -1,13 +1,14 @@
 nav
   .landing-nav
     position: absolute
-    width: 34%
+    width: 0
     height: 100%
-    left: $landing-two-thirds
+    left: 100%
     background-color: white
-    transition: all 400ms ease-out
     visibility: hidden
     z-index: 5
+    transition: all 400ms ease-out
+    cursor: pointer
 
     .navbutton
       position: relative
@@ -19,6 +20,10 @@ nav
       flex-direction: column
       align-items: center
       justify-content: center
+      font-size: 8vw
+      color: $light-gray
+      letter-spacing: 0
+      // cursor: pointer
 
       &::before
         content: ""
@@ -38,34 +43,41 @@ nav
         height: 2px
         width: 95%
 
-      .nav-link
-        font-size: 8vw
-        color: $light-gray
-        letter-spacing: normal
-        transition: all 1500ms ease-in-out
+      &:hover
+        letter-spacing: 10px
+        color: darken($light-gray, 10%)
+
+      //
+      // .nav-link
+      //   font-size: 8vw
+      //   color: $light-gray
+      //   // letter-spacing: normal
+      //   cursor: pointer
 
         &:hover
           letter-spacing: 10px
           color: darken($light-gray, 10%)
 
-      .active
-          letter-spacing: 10px
-          color: darken($light-gray, 10%)
+    .active
+      letter-spacing: 10px
+      color: darken($light-gray, 10%)
 
 
     .close-icon
       display: none
+      z-index: 20
+
 
   @media(max-width: 767px)
     .landing-nav
       position: absolute
-      // left: 100%
-      // z-index: 5
+      width: 0
       visibility: hidden
 
     .landing-nav.show-mobile-nav
-      left: $landing-third
+      z-index: 5
       width: $landing-two-thirds
+      left: $landing-third
       border-left: 2px solid $light-gray
       visibility: visible
 
@@ -75,8 +87,12 @@ nav
       right: 10px
       padding-left: 10px
       padding-top: 10px
-      z-index: 5
 
   @media(min-width: 768px)
     .landing-nav
+      width: 34%
+      left: $landing-two-thirds
       visibility: visible
+
+    .navbutton
+      transition: all 1500ms ease-in-out

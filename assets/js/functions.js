@@ -18,10 +18,12 @@ siteWrapper.addEventListener('click', function(e) {
     var text = target.textContent || target.innerText;
 
     // Manage clicks for various items below.
-    if (target.classList.contains("nav-link")) {
+
+
+    if (target.classList.contains("navbutton")) {
       setActiveLandingNav(target);
-      showHiddenLandingPane(target);
-      if (target.parentNode.parentNode.classList.contains("show-mobile-nav")) {
+      showHiddenLandingPane(text.toLowerCase());
+      if (target.parentNode.classList.contains("show-mobile-nav")) {
         toggleMobileNav();
       }
 
@@ -69,9 +71,9 @@ function toggleMobileNav() {
 // -----------------------------------------------------------
 // Show a section in the landing page
 // -----------------------------------------------------------
-function showHiddenLandingPane(el) {
-  var targetId = el.innerText.toLowerCase();
-  var targetEl = document.getElementById(targetId);
+function showHiddenLandingPane(paneId) {
+  // var targetId = el.innerText.toLowerCase();
+  var targetEl = document.getElementById(paneId);
   var siblings = getSiblings(targetEl);
 
   // don't change if the hidden panel is already shown
@@ -91,10 +93,10 @@ function showHiddenLandingPane(el) {
 // landing page navbar
 // -----------------------------------------------------------
 function setActiveLandingNav(el) {
-  var siblings = getSiblings(el.parentNode);
+  var siblings = getSiblings(el);
   el.classList.toggle('active');
   for (i = 0; i < siblings.length; i++) {
-    siblings[i].childNodes[0].classList.remove("active");
+    siblings[i].classList.remove("active");
   }
 };
 
