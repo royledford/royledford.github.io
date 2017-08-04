@@ -7,9 +7,12 @@
 var siteWrapper = document.querySelector(".site");
 
 siteWrapper.addEventListener('click', function(e) {
+  // exit if the clicked item is the .sit div
   if (e.target === e.currentTarget) {
     return;
   }
+
+    // handle cross browser irregularties
     e = e || window.event;
     var target = e.target || e.srcElement
     var text = target.textContent || target.innerText;
@@ -21,27 +24,48 @@ siteWrapper.addEventListener('click', function(e) {
       if (target.parentNode.parentNode.classList.contains("show-mobile-nav")) {
         toggleMobileNav();
       }
+
+      // if a navlink is clicked hide the main landing text,
+      // this will never be shown again so just hide.
+      var landingText = document.getElementsByClassName("landing-text")[0];
+      if (landingText && !landingText.classList.contains("hide")) {
+        landingText.classList += " hide";
+      }
     }
 
+    // if (target.classList.contains("landing-text")) {
+    //   target.className += " hide";
+    // }
+
+    // TWhen either the open or close icon is clicked
     if (target.classList.contains("close-icon-link")
-        || target.classList.contains("show-icon-link")) {
+        || target.classList.contains("open-icon-link")) {
       toggleMobileNav();
     }
 
     e.stopPropagation();
 }, false);
 
+
 // -----------------------------------------------------------
 // Show / Hide the landing navbar when on smaller screen sizes
 // -----------------------------------------------------------
 function toggleMobileNav() {
   var el = document.getElementsByClassName("landing-nav");
-  // alert(x[0].className);
   if (el[0].className === "landing-nav") {
       el[0].className += " show-mobile-nav";
   } else {
       el[0].className = "landing-nav";
   }
+
+  // hide the menu item if it is showing.
+  el = document.getElementsByClassName("menu-icon");
+  if (el[0].className === "menu-icon") {
+      el[0].className += " hide";
+  } else {
+      el[0].className = "menu-icon";
+  }
+
 };
 
 

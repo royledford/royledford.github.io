@@ -527,6 +527,12 @@ hr {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg); }
 
+.show {
+  visiblity: visible; }
+
+.hide {
+  visibility: hidden; }
+
 nav .landing-nav {
   position: absolute;
   width: 34%;
@@ -625,15 +631,16 @@ section#landing {
     text-transform: uppercase; }
   section#landing h1 {
     width: 100%; }
-  section#landing .icon {
+  section#landing .menu-icon {
     position: relative;
     display: none; }
 
 @media (max-width: 767px) {
   section#landing {
     width: 100%; }
-  section#landing .icon {
+  section#landing .menu-icon {
     display: block;
+    visibility: visible;
     float: right;
     margin: 10px;
     z-index: 20; } }
@@ -696,7 +703,7 @@ section#who.show {
   width: 66%;
   z-index: 3;
   visibility: visible; }
-  section#who.show .icon {
+  section#who.show .menu-icon {
     display: none; }
 
 @media (max-width: 767px) {
@@ -804,7 +811,7 @@ section#work.show {
   width: 66%;
   z-index: 3;
   visibility: visible; }
-  section#work.show .icon {
+  section#work.show .menu-icon {
     position: relative;
     float: right;
     display: none;
@@ -814,7 +821,7 @@ section#work.show {
   section#work {
     width: 100%;
     left: 100%; }
-  .home-wrap section#work .icon {
+  .home-wrap section#work .menu-icon {
     display: block;
     float: right;
     margin: 10px; }
@@ -876,7 +883,7 @@ section#write.show {
   visibility: visible;
   z-index: 3;
   overflow: auto; }
-  section#write.show .icon {
+  section#write.show .menu-icon {
     position: relative;
     float: right;
     display: none;
@@ -886,7 +893,7 @@ section#write.show {
   section#write {
     width: 100%;
     left: 100%; }
-  .home-wrap section#write .icon {
+  .home-wrap section#write .menu-icon {
     display: block;
     float: right;
     margin: 10px; }
