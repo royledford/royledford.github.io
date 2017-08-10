@@ -9,10 +9,10 @@ header
   top: 0
   height: $header-height
   position: fixed
-  background-color: $backgrounds
+  background-color: $white
   transition: top 0.2s ease-in-out
   z-index: 1
-  border-bottom: solid $medium-blue 1px
+  border-bottom: solid $light-gray 1px
 
 .nav-up
   top: -$header-height - $header-border-height
@@ -24,14 +24,15 @@ ul.nav-list
   .logo
     +hide-text
     background:
-      image: url('/assets/img/logo.png')
+      image: url('/assets/img/header-logo.svg')
       size: contain
       repeat: no-repeat
-    margin: 10px 0px 0px 10px
     float: left
-    height: 60px
-    width: 60px
+    height: $header-height
+    width: 298px
 
+  .navbutton
+    border-left: 1px solid $light-gray
 
   .nav-block
     list-style: none
@@ -46,7 +47,7 @@ ul.nav-list
   li
     display: inline-block
 
-    &:hover
+    &:hover:not(:first-child)
       background-color: $nav-hover
 
 
