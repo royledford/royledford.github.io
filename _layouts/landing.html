@@ -1,7 +1,18 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-  {% include landing-header.html %}
+    {% include _head.html %}
 
-  {{ content }}
+    <body>
+      <div class="site">
+
+        {% include landing-header.html %}
+
+        {{ content }}
+
+      </div>
+
+      {% include _js-last.html %}
+
+    </body>
+</html>

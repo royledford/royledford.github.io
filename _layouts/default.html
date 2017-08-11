@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-    {% include head.html %}
+    {% include _head.html %}
 
     <body>
 
 
+      <div class="second-site">
 
+        {% include _header.html %}
+
+        <div class="content">
           {{ content }}
+        </div>
+
+        {% include _footer.html %}
+
+      </div>
 
 
 
-        <!-- <script src="/assets/js/jquery-3.2.1.min.js"></script> -->
-        <script type="text/javascript" src="/assets/js/functions.js"></script>
+      {% include _js-last.html %}
     </body>
 </html>
