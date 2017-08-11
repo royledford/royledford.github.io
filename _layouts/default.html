@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" href="{{ "/favicon.ico?v=2" | prepend: site.baseurl }}">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    {% include _head.html %}
 
-        <!-- Fonts -->
-        <script src="https://use.fontawesome.com/f340752ddd.js"></script>
-    </head>
     <body>
 
-        <div class="site">
 
-          <!-- {% include header.html %} -->
+      <div class="second-site">
 
+        {% include _header.html %}
+
+        <div class="content">
           {{ content }}
-
-          <!-- {% include footer.html %} -->
-
-
         </div>
 
-        <script src="/assets/js/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="/assets/js/functions.js"></script>
+        {% include _footer.html %}
+
+      </div>
+
+
+
+      {% include _js-last.html %}
     </body>
 </html>
