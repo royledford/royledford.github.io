@@ -3,6 +3,7 @@ layout: post
 title:  "I switched from Windows to Mac and it's awesome!"
 date:   2017-03-08 09:11:03
 categories: blog
+tags: [tech, mac, windows]
 ---
 I started my computing career on Windows and have been using it as a platform
 for longer than I can remember. I've been working as a software developer

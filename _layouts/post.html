@@ -4,6 +4,19 @@ layout: default
 <article class="post-wrap">
   <h1 class="post-title">{{ page.title }}</h1>
   <time class="post-date" pubdate>{{ page.date | date_to_string }}</p>
+  <div>
+    <ul class="tag-cloud">
+      {% for tag in page.tags %}
+      <li>
+        <a class="tag-cloud-item"  href="{{site.baseurl}}/_tags/post-archive.html#{{tag | cgi_escape}}" title="Posts tagged {{tag}}" rel="tag">{{ tag }}</a>
+      </li>
+    {% endfor %}</p>
+  </div>
+
+  <div class="post">
+
+  {{ content }}
+
 
   <div class="post">
   {{ content }}

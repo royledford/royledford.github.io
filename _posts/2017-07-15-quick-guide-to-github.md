@@ -3,6 +3,7 @@ layout: post
 title:  "Quick Guide to Github"
 date:   2017-07-15 09:11:03
 categories: blog
+tags: [github, code]
 ---
 This is just a quick guide to how to use Git and Github.
 
