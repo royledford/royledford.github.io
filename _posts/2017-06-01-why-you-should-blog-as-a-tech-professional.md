@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Wy you should blog as a professional!"
+title:  "Why you should blog as a professional!"
 date:   2017-06-01 09:11:03
 categories: blog
-tags: [blog]
+tags: [blog, writing]
 ---
 I've recently started blogging, in fact this is my first real blog post. I have written some posts previously for companies that I have worked at, but those were specific to that company. I've never done it for my own personal benefit however.
 
