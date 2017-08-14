@@ -3,22 +3,26 @@ layout: default
 title: Post Archives
 ---
 <main id="post-archive" role="main" class="archive-wrap">
-  <article class="archive">
-    <article role="article">
+  <article class="archive" role="article">
 
       <header>
         <h1 id="top">{{page.title}}</h2>
 
-          <ul class="tag-cloud">
-            <!-- Capture all the tags into an array -->
-            {% capture site_tags %}{% for tag in site.tags %}{{tag | first}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-            {% assign sortedTags=site_tags |split:',' | sort %}
+        <!-- Capture all the tags into an array -->
+        {% capture site_tags %}{% for tag in site.tags %}{{tag | first}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+        {% assign sortedTags=site_tags | split:',' | sort %}
 
+        <div class="tag-cloud">
+          <ul class="tag-cloud-list">
+            {% for tag in sortedTags %}
+             <li><a class="tag-cloud-item" href="#{{tag | strip | cgi_escape}}">
+               {{ tag | strip }} <span class="tag-count">{{site.tags[tag].size}}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
 
-              {% for tag in sortedTags %}
-                <li><a class="tag-cloud-item" href="#{{tag | cgi_escape}}">{{ tag }} <span class="tag-count">{{site.tags[tag].size}}</span></a></li>
-              {% endfor %}
-        </ul>
       </header>
 
       {% for tag in sortedTags %}
@@ -36,7 +40,6 @@ title: Post Archives
 
       {% endfor %}
 
-    </article>
 
   </article>
 
