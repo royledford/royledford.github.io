@@ -1,27 +1,44 @@
-.post-wrap
-  max-width: 600px
-  margin-left: auto
-  margin-right: auto
+.post-wrapper
+  display: flex
+  flex-direction: row
   padding: 25px 10px
-  height: 100%
-  text-align: left
+
+  .post-body
+    display: flex
+    flex: 1
+    flex-direction: column
+    max-width: 700px
+    margin-left: auto
+    margin-right: auto
+    text-align: left
+
+  .post-tag-list
+    flex: 0 0 10em
+    text-align: right
+
+    h2
+      margin-bottom: 1em
 
   .post
     margin-bottom: 30px
 
   .post-title
+    margin-top: 0
     margin-bottom: 5px
 
   .post-date
     margin-top: 0
 
-  .tag-cloud
+  .post-tag-cloud
+    margin-bottom: 1em
     li
       display: inline-block
       list-style-type: none
 
+    p
+      display: inline
 
-  .tag-cloud-item
+  .post-tag-cloud-item
     background-color: $light-gray
     margin-right: 20px
     border-top-left-radius: 10px
@@ -38,7 +55,3 @@
 
 .post-date
   margin-top: 0
-
-.post-excerpt
-  margin-top: 0
->>>>>>> 7239f9de9e6313103d0ff7063b28e0c2e3c3fa24
