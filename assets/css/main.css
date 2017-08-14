@@ -1214,40 +1214,6 @@ section.posts .post-date {
 section.posts .post-excerpt {
   margin-top: 0; }
 
-.home-wrap {
-  padding: 0px;
-  margin: 0px; }
-
-.home-sections section {
-  padding: 50px 0; }
-
-.flex {
-  display: -ms-flexbox;
-  display: flex; }
-
-section.posts .posts-wrap {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 10px;
-  height: 100%;
-  text-align: left; }
-
-section.posts ul {
-  list-style-type: none; }
-
-section.posts .post {
-  margin-bottom: 30px; }
-
-section.posts .post-title {
-  margin-bottom: 5px; }
-
-section.posts .post-date {
-  margin-top: 0; }
-
-section.posts .post-excerpt {
-  margin-top: 0; }
-
 .archive-wrap {
   max-width: 600px;
   margin-left: auto;
@@ -1255,34 +1221,33 @@ section.posts .post-excerpt {
   padding: 25px 10px;
   height: 100%;
   text-align: left; }
-  .archive-wrap li {
+  .archive-wrap .taglist {
     list-style-type: none; }
-  .archive-wrap .tag-cloud li {
-    display: inline-block; }
-  .archive-wrap .tag-cloud-item {
-    background-color: #f2f2f2;
-    margin-right: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding-left: 10px;
-    text-transform: uppercase; }
-  .archive-wrap a:visited {
-    color: #777777; }
-  .archive-wrap .tag-count {
-    background-color: #fff;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding-left: 10px; }
   .archive-wrap .post-list {
     margin-top: 15px; }
   .archive-wrap .post-title {
     text-transform: capitalize; }
 
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 75px; }
+.tag-cloud-list {
+  list-style-type: none; }
+  .tag-cloud-list li {
+    display: inline-block; }
+
+.tag-cloud-item {
+  background-color: #f2f2f2;
+  margin-right: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+  text-transform: uppercase; }
+  .tag-cloud-item:visited {
+    color: #777777; }
+
+.tag-count {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 8px; }
 
 footer {
   position: relative;
