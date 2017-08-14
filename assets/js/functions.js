@@ -4,9 +4,11 @@
 // -----------------------------------------------------------
 // Handle click events
 // -----------------------------------------------------------
-var siteWrapper = document.querySelector(".site");
+var landingSiteWrapper = document.querySelector(".site");
+var secondSiteWrapper = document.querySelector(".second-site");
 
-siteWrapper.addEventListener('click', function(e) {
+// Add event listener to the landing site wrapper if it exists
+landingSiteWrapper && landingSiteWrapper.addEventListener('click', function(e) {
   // exit if the clicked item is the .sit div
   if (e.target === e.currentTarget) {
     return;
@@ -45,6 +47,24 @@ siteWrapper.addEventListener('click', function(e) {
 }, false);
 
 
+// Add event listener to the secondary site wrapper if it exists
+secondSiteWrapper && secondSiteWrapper.addEventListener('click', function(e) {
+  // exit if the clicked item is the .sit div
+  if (e.target === e.currentTarget) {
+    return;
+  }
+
+    // handle cross browser irregularties
+    e = e || window.event;
+    var target = e.target || e.srcElement
+    var text = target.textContent || target.innerText;
+
+    // Manage clicks for various items below.
+
+
+
+    e.stopPropagation();
+}, false);
 // -----------------------------------------------------------
 // Show / Hide the landing navbar when on smaller screen sizes
 // -----------------------------------------------------------

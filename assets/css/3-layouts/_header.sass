@@ -1,71 +1,72 @@
-$header-height: 75px
 $header-border-height: 1px
 
 header
 
-.nav-bar
-  width: 100%
-  text-align: right
-  top: 0
-  height: $header-height
-  position: fixed
-  background-color: $backgrounds
-  transition: top 0.2s ease-in-out
-  z-index: 1
-  border-bottom: solid $medium-blue 1px
+  .nav-bar
+    width: 100%
+    text-align: right
+    top: 0
+    height: $header-height
+    position: fixed
+    background-color: $white
+    transition: top 0.2s ease-in-out
+    z-index: 1
+    border-bottom: solid $light-gray 1px
+    // +clearfix
 
-.nav-up
-  top: -$header-height - $header-border-height
+  .nav-up
+    top: -$header-height - $header-border-height
 
-ul.nav-list
-  margin: 0
-  padding: 0
-
-  .logo
-    +hide-text
-    background:
-      image: url('/assets/img/logo.png')
-      size: contain
-      repeat: no-repeat
-    margin: 10px 0px 0px 10px
-    float: left
-    height: 60px
-    width: 60px
-
-
-  .nav-block
-    list-style: none
+  ul.nav-list
     margin: 0
     padding: 0
-    position: static
-    float: right
-    display: inline-block
-    text-align: center
-    vertical-align: top
 
-  li
-    display: inline-block
+    .logo
+      +hide-text
+      background:
+        image: url('/assets/img/header-logo.svg')
+        size: contain
+        repeat: no-repeat
+      float: left
+      height: $header-height
+      width: 298px
 
-    &:hover
-      background-color: $nav-hover
+    .navbutton
+      border-left: 1px solid $light-gray
+
+    .nav-block
+      list-style: none
+      margin: 0
+      padding: 0
+      position: static
+      float: right
+      display: inline-block
+      text-align: center
+      vertical-align: top
+
+    li
+      display: inline-block
+
+      &:hover:not(:first-child)
+        background-color: $nav-hover
 
 
-  .active
-      background-color: $nav-active
-      // border-bottom: 2px solid $nav-active
-  a
-    color: $nav-color
-    display: block
-    text-align: center
-    padding: 20px 25px
-    text-decoration: none
-    font-size: 20px
+    .active
+        background-color: $nav-active
+        // border-bottom: 2px solid $nav-active
+    a
+      color: $nav-color
+      display: block
+      text-align: center
+      padding: 20px 25px
+      text-decoration: none
+      font-size: 20px
+
+      @media(max-width: 370px)
+        font-size: 18px
+        padding: 20px 20px
+
 
     @media(max-width: 370px)
-      font-size: 18px
-      padding: 20px 20px
-
-
-  @media(max-width: 370px)
-    .logo
-      +size(50px)
+      .logo
+        +size(50px)
