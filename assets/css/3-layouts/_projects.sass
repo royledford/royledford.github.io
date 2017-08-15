@@ -1,0 +1,184 @@
+section#projects
+
+  .content
+    margin: 0 auto
+    max-width: 1000px
+
+  h1
+    margin-top: 0
+    font-size: 30px
+    font-weight: 300
+    color: lighten($medium-gray, 40%)
+
+  .grid
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    position: relative
+    margin: 0 auto
+    text-align: center
+
+  // .project-card
+  //   &:hover
+  //     .title
+  //       top: 40%
+  //     .description
+  //       color: red
+
+  figure
+  	position: relative
+  	overflow: hidden
+  	margin: 10px 1%
+  	min-width: 233px
+  	max-width: 233px
+  	max-height: 233px
+  	text-align: center
+  	cursor: pointer
+
+  .title
+  	position: absolute
+  	top: 50%
+  	left: 0
+  	width: 100%
+  	color: $medium-gray
+  	transition: transform 350ms 0ms, color
+  	transform: translate3d(0,-50%,0)
+
+  .description
+    position: absolute
+    top: 70%
+    left: 0
+    width: 100%
+  	color: $medium-gray
+    line-height: 120%
+
+  img
+  	position: relative
+  	display: block
+  	min-height: 100%
+  	max-width: 100%
+  	opacity: 0.5
+
+  figcaption
+  	padding: 2em
+  	color: #fff
+  	text-transform: uppercase
+  	font-size: 1.25em
+
+  .project-info
+    &:before
+    	position: absolute
+    	top: 0
+    	left: 0
+    	width: 100%
+    	height: 100%
+    	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 100%)
+    	content: ''
+    	opacity: 100
+
+
+
+
+//
+// figure.effect-sadie figcaption::before,
+// figure.effect-sadie p {
+// 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+// 	transition: opacity 0.35s, transform 0.35s;
+// }
+//
+// figure.effect-sadie p {
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 0;
+// 	padding: 2em;
+// 	width: 100%;
+// 	opacity: 0;
+// 	-webkit-transform: translate3d(0,10px,0);
+// 	transform: translate3d(0,10px,0);
+// }
+//
+
+
+//
+// figure.effect-sadie:hover figcaption::before ,
+// figure.effect-sadie:hover p {
+// 	opacity: 1;
+// 	-webkit-transform: translate3d(0,0,0);
+// 	transform: translate3d(0,0,0);
+// }
+
+//
+//   .projects-wrap
+//     height: 100%
+//
+//   .gallery
+//     display: flex
+//     justify-content: space-around
+//
+//   .card
+//     position: relative
+//     padding: 0
+//     margin-left: 10px
+//     margin-right: 10px
+//     width: 233px
+//     height: 233px
+//
+//     a
+//       position: relative
+//       opacity: 0
+//       display: block
+//       width: 233px
+//       height: 233px
+//       z-index: 1
+//
+//   .screen
+//     position: relative
+//     top: 0
+//     // margin-top: 158px
+//     // left: 10px
+//     width: 233px
+//     height: 233px
+//     background-color: white
+//     opacity: .85
+//
+//     .content
+//       box-sizing: border-box
+//       position: relative
+//       left: 10px
+//       width: 233px
+//       height: 233px
+//       padding-left: 15px
+//       padding-top: 25px
+//
+//       h2
+//         margin-top: 138px
+//         margin-bottom: 5px
+//
+//
+// //-----------------------------------
+// // Show hover effect on gallery thumbs on
+// // large screens
+// //-----------------------------------
+// @media(min-width: 768px)
+//   section#projects .card
+//     .content
+//       transition: all 400ms ease-in-out
+//       h2
+//         margin-top: 25px
+//
+//     .screen
+//       position: absolute
+//       // left: 10px
+//       // width: 233px
+//       // height: 233px
+//       // margin-top: 0
+//       background-color: white
+//       opacity: .85
+//       transition: all 400ms ease-in-out
+//
+//     &:hover
+//       .content
+//         // left: 243px
+//       .screen
+//         opacity: 0
