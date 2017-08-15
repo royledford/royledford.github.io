@@ -19,12 +19,7 @@ section#projects
     margin: 0 auto
     text-align: center
 
-  // .project-card
-  //   &:hover
-  //     .title
-  //       top: 40%
-  //     .description
-  //       color: red
+
 
   figure
   	position: relative
@@ -38,7 +33,7 @@ section#projects
 
   .title
   	position: absolute
-  	top: 50%
+  	top: 70%
   	left: 0
   	width: 100%
   	color: $medium-gray
@@ -47,10 +42,9 @@ section#projects
 
   .description
     position: absolute
-    top: 70%
+    top: 80%
     left: 0
     width: 100%
-  	color: $medium-gray
     line-height: 120%
 
   img
@@ -80,105 +74,44 @@ section#projects
 
 
 
-//
-// figure.effect-sadie figcaption::before,
-// figure.effect-sadie p {
-// 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-// 	transition: opacity 0.35s, transform 0.35s;
-// }
-//
-// figure.effect-sadie p {
-// 	position: absolute;
-// 	bottom: 0;
-// 	left: 0;
-// 	padding: 2em;
-// 	width: 100%;
-// 	opacity: 0;
-// 	-webkit-transform: translate3d(0,10px,0);
-// 	transform: translate3d(0,10px,0);
-// }
-//
+//-----------------------------------
+// Show hover effect on gallery thumbs on
+// large screens
+//-----------------------------------
+@media(min-width: 768px)
+  section#projects
 
+    img
+      opacity: 1
 
-//
-// figure.effect-sadie:hover figcaption::before ,
-// figure.effect-sadie:hover p {
-// 	opacity: 1;
-// 	-webkit-transform: translate3d(0,0,0);
-// 	transform: translate3d(0,0,0);
-// }
+    .title
+      top: 90%
+      color: $white
+      transition: all 400ms ease-in-out
 
-//
-//   .projects-wrap
-//     height: 100%
-//
-//   .gallery
-//     display: flex
-//     justify-content: space-around
-//
-//   .card
-//     position: relative
-//     padding: 0
-//     margin-left: 10px
-//     margin-right: 10px
-//     width: 233px
-//     height: 233px
-//
-//     a
-//       position: relative
-//       opacity: 0
-//       display: block
-//       width: 233px
-//       height: 233px
-//       z-index: 1
-//
-//   .screen
-//     position: relative
-//     top: 0
-//     // margin-top: 158px
-//     // left: 10px
-//     width: 233px
-//     height: 233px
-//     background-color: white
-//     opacity: .85
-//
-//     .content
-//       box-sizing: border-box
-//       position: relative
-//       left: 10px
-//       width: 233px
-//       height: 233px
-//       padding-left: 15px
-//       padding-top: 25px
-//
-//       h2
-//         margin-top: 138px
-//         margin-bottom: 5px
-//
-//
-// //-----------------------------------
-// // Show hover effect on gallery thumbs on
-// // large screens
-// //-----------------------------------
-// @media(min-width: 768px)
-//   section#projects .card
-//     .content
-//       transition: all 400ms ease-in-out
-//       h2
-//         margin-top: 25px
-//
-//     .screen
-//       position: absolute
-//       // left: 10px
-//       // width: 233px
-//       // height: 233px
-//       // margin-top: 0
-//       background-color: white
-//       opacity: .85
-//       transition: all 400ms ease-in-out
-//
-//     &:hover
-//       .content
-//         // left: 243px
-//       .screen
-//         opacity: 0
+    .description
+      top: 80%
+      opacity: 0
+      transition: all 400ms ease-in-out
+
+    .project-info
+      &:before
+        transition: all 400ms ease-in-out
+
+    .project-info
+      &:before
+      	top: 100%
+      	opacity: 1
+    	  background: linear-gradient(to bottom, rgba(255,255,255,0) 0,rgba(255,255,255,1) 75%)
+
+    .project-card
+      &:hover
+        .title
+          top: 70%
+          color: $dark-gray
+        .description
+          top: 80%
+          opacity: 1
+        .project-info
+          &:before
+            top: 0
