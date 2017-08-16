@@ -1474,6 +1474,77 @@ section#pza hr {
     top: 1700px;
     left: 647px; } }
 
+section#salut .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#salut h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#salut h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#salut p, section#salut h3 {
+  color: #aaaaaa; }
+
+section#salut img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#salut .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#salut .copy h3 {
+    text-align: center; }
+
+section#salut hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#salut .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 1400px; }
+  section#salut .img-1 {
+    position: absolute;
+    width: 300px;
+    top: 250px;
+    left: 60px; }
+  section#salut .img-2 {
+    position: absolute;
+    width: 300px;
+    top: 450px;
+    left: 500px; }
+  section#salut .copy-section-1 {
+    position: absolute;
+    top: 300px;
+    left: 344px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#salut .img-3 {
+    position: absolute;
+    width: 350px;
+    top: 700px;
+    left: 233px; } }
+
 footer {
   position: relative;
   bottom: 0;
