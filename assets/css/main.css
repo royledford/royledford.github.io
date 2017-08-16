@@ -1423,6 +1423,9 @@ section#pza .copy {
   section#pza .copy h3 {
     text-align: center; }
 
+section#pza hr {
+  border-color: #aaaaaa; }
+
 @media (min-width: 768px) {
   section#pza .wrapper {
     position: relative;
