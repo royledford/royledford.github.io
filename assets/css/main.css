@@ -1101,7 +1101,7 @@ header .nav-bar {
   position: fixed;
   background-color: #fff;
   transition: top 0.2s ease-in-out;
-  z-index: 1;
+  z-index: 20;
   border-bottom: solid #f2f2f2 1px; }
 
 header .nav-up {
@@ -1267,6 +1267,283 @@ section.posts .post-excerpt {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding-left: 8px; }
+
+section#projects .content {
+  margin: 0 auto;
+  max-width: 1000px; }
+
+section#projects h1 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#projects .grid {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  margin: 0 auto;
+  text-align: center; }
+
+section#projects .project-card {
+  margin: 20px; }
+
+section#projects .project-link {
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 100%; }
+
+section#projects figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  width: 233px;
+  width: 233px;
+  text-align: center;
+  cursor: pointer; }
+
+section#projects .project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+section#projects .title {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  color: #444;
+  transition: -webkit-transform 350ms 0ms, color;
+  transition: transform 350ms 0ms, color;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0); }
+
+section#projects .description {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  line-height: 120%; }
+
+section#projects img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.5; }
+
+section#projects .caption {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em; }
+
+section#projects .project-info:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+  content: '';
+  opacity: 100; }
+
+@media (min-width: 768px) {
+  section#projects img {
+    opacity: 1; }
+  section#projects .title {
+    top: 90%;
+    color: #fff;
+    opacity: 0;
+    transition: all 400ms ease-in-out; }
+  section#projects .description {
+    top: 100%;
+    opacity: 0;
+    transition: all 400ms ease-in-out; }
+  section#projects .project-info:before {
+    transition: all 400ms ease-in-out; }
+  section#projects .project-info:before {
+    top: 50%;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, white 75%); }
+  section#projects .project-card:hover .title {
+    top: 80%;
+    color: #222;
+    opacity: 1; }
+  section#projects .project-card:hover .description {
+    top: 90%;
+    opacity: 1; }
+  section#projects .project-card:hover .project-info:before {
+    top: 0;
+    opacity: 1; } }
+
+section#pza .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#pza h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#pza h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#pza p, section#pza h3 {
+  color: #aaaaaa; }
+
+section#pza img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#pza .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#pza .copy h3 {
+    text-align: center; }
+
+section#pza hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#pza .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 2200px; }
+  section#pza .img-1 {
+    position: absolute;
+    width: 557px;
+    top: 300px;
+    left: 0; }
+  section#pza .img-2 {
+    position: absolute;
+    width: 557px;
+    top: 800px;
+    left: 405px; }
+  section#pza .copy-section-1 {
+    position: absolute;
+    top: 600px;
+    left: 344px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#pza .copy-section-2 {
+    position: absolute;
+    top: 1400px;
+    left: 344px;
+    width: 557px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#pza .img-3 {
+    position: absolute;
+    width: 728px;
+    top: 1000px;
+    left: 233px; }
+  section#pza .img-4 {
+    position: absolute;
+    width: 395px;
+    top: 1600px;
+    left: 0; }
+  section#pza .img-5 {
+    position: absolute;
+    width: 314px;
+    top: 1700px;
+    left: 647px; } }
+
+section#salut .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#salut h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#salut h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#salut p, section#salut h3 {
+  color: #aaaaaa; }
+
+section#salut img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#salut .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#salut .copy h3 {
+    text-align: center; }
+
+section#salut hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#salut .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 1400px; }
+  section#salut .img-1 {
+    position: absolute;
+    width: 300px;
+    top: 250px;
+    left: 60px; }
+  section#salut .img-2 {
+    position: absolute;
+    width: 300px;
+    top: 450px;
+    left: 500px; }
+  section#salut .copy-section-1 {
+    position: absolute;
+    top: 300px;
+    left: 344px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#salut .img-3 {
+    position: absolute;
+    width: 350px;
+    top: 700px;
+    left: 233px; } }
 
 footer {
   position: relative;

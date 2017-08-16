@@ -41,27 +41,25 @@ section#who
 
 section#work
   .landing-wrap
-    //- .menu-icon: a(href="javascript:void(0);")
-    //-   i.fa.fa-ellipsis-h.fa-2x.open-icon-link
       
     .gallery
       .gallery-col
-        .card(style="background-image: url(/assets/img/work-thumbs/sonic-thumb.jpg)")
-          a(href="#")
-          .screen
-          .content
-            h2 Sonic Quiver
-            p Web Design / Web development
+        //- .card(style="background-image: url(/assets/img/work-thumbs/sonic-thumb.jpg)")
+        //-   a(href="/project-pages/project-sonic.html")
+        //-   .screen
+        //-   .content
+        //-     h2 Sonic Quiver
+        //-     p Web Design / Web development
             
         .card(style="background-image: url(/assets/img/work-thumbs/ducati-thumb.jpg)")
-          a(href="#")
+          a(href="/project-pages/project-pza.html")
           .screen
           .content
             h2 PZA Parlour
             p Product Design
 
-        .card(style="background-image: url(/assets/img/work-thumbs/salut-thumb1.jpg)")
-          a(href="#")
+        .card(style="background-image: url(/assets/img/work-thumbs/salut-thumb.jpg)")
+          a(href="/project-pages/project-salut.html")
           .screen
           .content
             h2 Salut
@@ -69,13 +67,10 @@ section#work
             
     .vert-link
       .link-container
-        a(href="#").link-brackets See More...
+        | <a class="link-brackets" href="{{site.baseurl}}/projects.html" rel="bookmark" title="Link to list of projects">See More...</a>
 
 section#write
   .landing-wrap
-    //- .menu-icon: a(href="javascript:void(0);")
-    //-   i.fa.fa-ellipsis-h.fa-2x.open-icon-link
-      
     .blog-wrap
       |{% for post in site.posts limit: 3 %}
       |   <div class="post">
