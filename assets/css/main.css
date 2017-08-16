@@ -1360,12 +1360,12 @@ section#projects .project-info:before {
   section#projects img {
     opacity: 1; }
   section#projects .title {
-    top: 80%;
+    top: 90%;
     color: #fff;
     opacity: 0;
     transition: all 400ms ease-in-out; }
   section#projects .description {
-    top: 80%;
+    top: 100%;
     opacity: 0;
     transition: all 400ms ease-in-out; }
   section#projects .project-info:before {
@@ -1375,11 +1375,11 @@ section#projects .project-info:before {
     opacity: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, white 75%); }
   section#projects .project-card:hover .title {
-    top: 70%;
+    top: 80%;
     color: #222;
     opacity: 1; }
   section#projects .project-card:hover .description {
-    top: 80%;
+    top: 90%;
     opacity: 1; }
   section#projects .project-card:hover .project-info:before {
     top: 0;
