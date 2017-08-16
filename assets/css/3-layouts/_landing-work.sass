@@ -53,7 +53,7 @@ section#work
       background-color: white
       opacity: .85
 
-    .content
+    .gallery-content
       box-sizing: border-box
       position: absolute
       left: 10px
@@ -65,6 +65,9 @@ section#work
       h2
         margin-top: 138px
         margin-bottom: 5px
+
+      p
+        text-align: left
 
     .vert-link
       display: inline-block
@@ -127,7 +130,7 @@ section#work.show
 //-----------------------------------
 @media(min-width: 768px)
   section#work .card
-    .content
+    .gallery-content
       transition: all 400ms ease-in-out
       h2
         margin-top: 25px
@@ -143,7 +146,7 @@ section#work.show
       transition: all 400ms ease-in-out
 
     &:hover
-      .content
+      .gallery-content
         left: 243px
       .screen
         opacity: 0

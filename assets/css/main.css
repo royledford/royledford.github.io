@@ -921,7 +921,7 @@ section#work {
       height: 75px;
       background-color: white;
       opacity: .85; }
-    section#work .landing-wrap .content {
+    section#work .landing-wrap .gallery-content {
       box-sizing: border-box;
       position: absolute;
       left: 10px;
@@ -929,9 +929,11 @@ section#work {
       height: 233px;
       padding-left: 15px;
       padding-top: 25px; }
-      section#work .landing-wrap .content h2 {
+      section#work .landing-wrap .gallery-content h2 {
         margin-top: 138px;
         margin-bottom: 5px; }
+      section#work .landing-wrap .gallery-content p {
+        text-align: left; }
     section#work .landing-wrap .vert-link {
       display: inline-block;
       padding: 0;
@@ -980,9 +982,9 @@ section#work.show {
     width: 100%; } }
 
 @media (min-width: 768px) {
-  section#work .card .content {
+  section#work .card .gallery-content {
     transition: all 400ms ease-in-out; }
-    section#work .card .content h2 {
+    section#work .card .gallery-content h2 {
       margin-top: 25px; }
   section#work .card .screen {
     position: absolute;
@@ -993,7 +995,7 @@ section#work.show {
     background-color: white;
     opacity: .85;
     transition: all 400ms ease-in-out; }
-  section#work .card:hover .content {
+  section#work .card:hover .gallery-content {
     left: 243px; }
   section#work .card:hover .screen {
     opacity: 0; }
