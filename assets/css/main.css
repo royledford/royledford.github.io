@@ -1101,7 +1101,7 @@ header .nav-bar {
   position: fixed;
   background-color: #fff;
   transition: top 0.2s ease-in-out;
-  z-index: 1;
+  z-index: 20;
   border-bottom: solid #f2f2f2 1px; }
 
 header .nav-up {
@@ -1384,6 +1384,92 @@ section#projects .project-info:before {
   section#projects .project-card:hover .project-info:before {
     top: 0;
     opacity: 1; } }
+
+section#pza .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#pza h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#pza h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#pza p, section#pza h3 {
+  color: #aaaaaa; }
+
+section#pza img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#pza .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#pza .copy h3 {
+    text-align: center; }
+
+@media (min-width: 768px) {
+  section#pza .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 2200px; }
+  section#pza .img-scooter1 {
+    position: absolute;
+    width: 557px;
+    top: 300px;
+    left: 0; }
+  section#pza .img-scooter2 {
+    position: absolute;
+    width: 557px;
+    top: 800px;
+    left: 405px; }
+  section#pza .scooter-copy {
+    position: absolute;
+    top: 600px;
+    left: 344px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#pza .ducati-copy {
+    position: absolute;
+    top: 1400px;
+    left: 344px;
+    width: 557px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#pza .img-ducati1 {
+    position: absolute;
+    width: 728px;
+    top: 1000px;
+    left: 233px; }
+  section#pza .img-ducati2 {
+    position: absolute;
+    width: 395px;
+    top: 1600px;
+    left: 0; }
+  section#pza .img-ducati3 {
+    position: absolute;
+    width: 314px;
+    top: 1700px;
+    left: 647px; } }
 
 footer {
   position: relative;

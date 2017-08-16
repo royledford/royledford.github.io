@@ -1,0 +1,100 @@
+section#pza
+
+  .wrapper
+    display: flex
+    flex-direction: column
+    margin: 0
+    padding: 0
+    // height: 100%
+    margin-top: 2em
+    padding: 0 20px
+
+  h1
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 30px
+    font-weight: 600
+    color: lighten($medium-gray, 40%)
+    line-height: 70%
+
+  h2
+    margin-top: 0
+    font-size: 2opx
+    font-weight: 300
+    color: lighten($medium-gray, 40%)
+
+  p, h3
+    color: lighten($medium-gray, 40%)
+
+  img
+    width: 100%
+    height: auto
+    margin: 20px 0
+
+  .copy
+    text-align: left
+    margin: 30px 0
+
+    h3
+      text-align: center
+
+//-----------------------------------
+// Show hover effect on gallery thumbs on
+// large screens
+//-----------------------------------
+@media(min-width: 768px)
+  section#pza
+
+    .wrapper
+      position: relative
+      max-width: 960px
+      margin: 20px auto
+      height: 2200px
+
+    .img-scooter1
+      position: absolute
+      width: 557px
+      top: 300px
+      left: 0
+
+    .img-scooter2
+      position: absolute
+      width: 557px
+      top: 800px
+      left: 405px
+
+    .scooter-copy
+      position: absolute
+      top: 600px
+      left: 344px
+      width: 395px
+      padding: 20px
+      background-color: $white
+      z-index: 1
+
+    .ducati-copy
+      position: absolute
+      top: 1400px
+      left: 344px
+      width: 557px
+      padding: 20px
+      background-color: $white
+      z-index: 1
+
+    .img-ducati1
+      position: absolute
+      width: 728px
+      top: 1000px
+      left: 233px
+
+    .img-ducati2
+      position: absolute
+      width: 395px
+      top: 1600px
+      left: 0
+
+    .img-ducati3
+      position: absolute
+      width: 314px
+      top: 1700px
+      left: 647px
