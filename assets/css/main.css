@@ -1293,6 +1293,13 @@ section#projects .grid {
 section#projects .project-card {
   margin: 20px; }
 
+section#projects .project-link {
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 100%; }
+
 section#projects figure {
   position: relative;
   overflow: hidden;
