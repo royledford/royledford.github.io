@@ -2,6 +2,22 @@
 
 
 // -----------------------------------------------------------
+// Handle switching pages in the landing version of the site.
+// If you navigate to the site with a query in the url,
+// this will open the correct 'page'.
+// query will contain: "show=" and who, work, or write.
+// -----------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+  var query = window.location.search.substring(1);
+  var navigateTo = getQueryValue(query, 'show');
+  if (['who', 'work', 'write'].includes(navigateTo)) {
+      setLandingPane(navigateTo);
+  }
+}, false);
+
+
+
+// -----------------------------------------------------------
 // Handle click events
 // -----------------------------------------------------------
 var landingSiteWrapper = document.querySelector(".site");
@@ -21,23 +37,20 @@ landingSiteWrapper && landingSiteWrapper.addEventListener('click', function(e) {
 
     // Manage clicks for various items below.
 
-
+    //----------------------
+    // Landing nav buttons
     if (target.classList.contains("navbutton")) {
-      setActiveLandingNav(target);
-      showHiddenLandingPane(text.toLowerCase());
+
+      setLandingPane(text);
+
       if (target.parentNode.classList.contains("show-mobile-nav")) {
         toggleMobileNav();
       }
 
-      // if a navlink is clicked hide the main landing text,
-      // this will never be shown again so just hide.
-      var landingText = document.getElementsByClassName("landing-text")[0];
-      if (landingText && !landingText.classList.contains("hide")) {
-        landingText.classList += " hide";
-      }
     }
 
-    // TWhen either the open or close icon is clicked
+    //----------------------
+    // mobile menu open/close
     if (target.classList.contains("close-icon-link")
         || target.classList.contains("open-icon-link")) {
       toggleMobileNav();
@@ -65,6 +78,24 @@ secondSiteWrapper && secondSiteWrapper.addEventListener('click', function(e) {
 
     e.stopPropagation();
 }, false);
+
+
+// -----------------------------------------------------------
+// Set a pane to current in the landing page.
+// -----------------------------------------------------------
+function setLandingPane(name) {
+  name = name.toLowerCase();
+  setActiveLandingNav(name);
+  showHiddenLandingPane(name);
+
+  // Hide the main landing text when showing a pane.
+  var landingText = document.getElementsByClassName("landing-text")[0];
+  if (landingText && !landingText.classList.contains("hide")) {
+    landingText.classList += " hide";
+  }
+}
+
+
 // -----------------------------------------------------------
 // Show / Hide the landing navbar when on smaller screen sizes
 // -----------------------------------------------------------
@@ -112,7 +143,9 @@ function showHiddenLandingPane(paneId) {
 // Add class active to the landing nav that was clicked in the
 // landing page navbar
 // -----------------------------------------------------------
-function setActiveLandingNav(el) {
+function setActiveLandingNav(nav) {
+  // Get the nav item
+  el = document.getElementById('nav-' + nav)
   var siblings = getSiblings(el);
   el.classList.toggle('active');
   for (i = 0; i < siblings.length; i++) {
@@ -120,6 +153,22 @@ function setActiveLandingNav(el) {
   }
 };
 
+
+// -----------------------------------------------------
+// Retrieve a variable from a query string passed
+// via a url.
+// -----------------------------------------------------
+function getQueryValue(toSearch, key) {
+      //  var query = window.location.search.substring(1);
+       var vars = toSearch.split("&");
+       for (var i = 0;i < vars.length; i++) {
+               var pair = vars[i].split("=");
+               if (pair[0] == key) {
+                 return pair[1];
+               }
+       }
+       return(false);
+}
 
 
 // -----------------------------------------------------
