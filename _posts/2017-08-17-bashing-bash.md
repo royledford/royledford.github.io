@@ -5,9 +5,9 @@ date:   2017-08-17
 tags: [development, mac]
 ---
 ## Bashing Bash
-
+<!--excerpt.start-->
 If you do any serious work on a Mac then you are probably using the bash terminal fairly often. This post contains some tips to make life a little easier when working with the terminal.
-
+<!--excerpt.end-->
 ### What is the terminal
 
 The terminal provides a command line interface (CLI) to the shell of the MAC OS. It can be used to enter commands to control your MAC.
