@@ -1150,7 +1150,7 @@ header ul.nav-list {
       header ul.nav-list a {
         font-size: 18px;
         padding: 20px 20px; } }
-  @media (max-width: 370px) {
+  @media (max-width: 415px) {
     header ul.nav-list .logo {
       height: 50px;
       width: 50px; } }
@@ -1562,7 +1562,7 @@ footer {
   height: 75px; }
   .contactbar .contacticons {
     margin: 0;
-    padding: .5em;
+    padding: .4em;
     display: inline-block;
     font-size: 1.8em;
     color: #444; }
