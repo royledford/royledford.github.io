@@ -1,0 +1,90 @@
+section#who
+  position: absolute
+  width: $landing-third
+  height: 33%
+  left: 0
+  color: $white
+  background-color: $white
+  overflow-x: hidden
+  visibility: hidden
+  z-index: 2
+  transition: all 300ms ease-in-out
+
+  .hero-image
+    background-color: blue
+    width: 100%
+    height: 200px
+    background:
+      image: url("/assets/img/landing-who-hero.jpg")
+      size: cover
+      position: bottom
+
+  .lead
+    font-size: 60px
+    font-weight: 600
+    text-align: center
+    color: $light-gray
+
+  .contact
+    padding: 0
+    list-style: none
+    color: $medium-gray
+    text-align: center
+    margin: 50px 0
+
+    li
+      padding: 0 20px
+
+  .social
+    padding: 0
+    text-align: center
+    white-space: nowrap
+    list-style: none
+
+    li
+      display: inline-block
+      padding: 0 20px
+
+  .copy
+    margin: 0 20px
+
+  .landing-wrap
+    height: 100%
+
+    &::after
+      content: ""
+      background: $light-gray
+      position: absolute
+      bottom: 5%
+      left: 100%
+      height: 90%
+      width: 2px
+
+section#who.show
+  left: 0
+  height: 100%
+  width: $landing-two-thirds
+  z-index: 3
+  visibility: visible
+
+  .menu-icon
+    display: none
+
+@media(max-width: 767px)
+  section#who
+    width: 100%
+    left: 0
+
+  .home-wrap section#who .icon
+    display: block
+    float: right
+    margin: 10px
+
+  section#who.show
+    left: 0
+    height: 100%
+    width: 100%
+
+@media(min-width: 768px)
+  section#who
+    left: $landing-two-thirds

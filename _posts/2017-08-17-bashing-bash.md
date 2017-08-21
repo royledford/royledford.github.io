@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Bashing Bash"
-date:   2017-08-17
+date:   2017-08-16
+categories: blog
 tags: [development, mac]
 img:    "typ-banner.jpg"
 img-alt: "Red Cuck Taylors"
