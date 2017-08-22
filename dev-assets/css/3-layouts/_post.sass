@@ -1,6 +1,6 @@
 .post-wrapper
   display: flex
-  flex-direction: row
+  flex-direction: column
   padding: 25px 10px
 
   .post-body
@@ -55,3 +55,10 @@
 
 .post-date
   margin-top: 0
+
+@media(min-width: 550px)
+  .post-wrapper
+    flex-direction: row
+
+  .post-body
+    padding: 0 20px
