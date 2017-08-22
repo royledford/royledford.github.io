@@ -1,40 +1,69 @@
 /*****************************************************************************/
+
+
 /*
 /* Common
 /*
 /*****************************************************************************/
 
+
 /* Global Reset */
- * {
-     margin: 0;
+
+* {
+    margin: 0;
     padding: 0;
- }
-
- *, *:before, *:after {
-   box-sizing: inherit;
- }
-html {
-   box-sizing: border-box;
- }
-
- html, body { height: 100%; }
-
- body {
-     background-color: white;
-     font: 13.34px Helvetica, Arial, sans-serif;
-     font-size: small;
-     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 100%; }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+html {
+    box-sizing: border-box;
+}
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font: 13.34px Helvetica, Arial, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+a {
+    color: #00a;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:visited {
+    color: #a0a;
+}
 
 // /*****************************************************************************/
 // /*
@@ -61,7 +90,6 @@ a:visited { color: #a0a; }
 // /* Site
 // /*
 // /*****************************************************************************/
-
 .site {
     font-size: 115%;
     text-align: justify;
@@ -134,14 +162,27 @@ a:visited { color: #a0a; }
 // /*****************************************************************************/
 
 /* standard */
+
+.post a:visited {
+    color: #444;
+}
+
+.post a {
+    // font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
 .post pre {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
 }
 
-.post ul, .post ol {
+.post ul,
+.post ol {
     margin-left: 1.35em;
+    margin-bottom: 1em;
 }
 
 .post code {
@@ -150,11 +191,24 @@ a:visited { color: #a0a; }
     padding: 0 .2em;
 }
 
+.post blockquote p {
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    padding: .75em .75em;
+    margin: 0 1em;
+}
+
+.post blockquote {
+    margin: 1em 1em;
+}
+
 .post pre code {
     border: none;
 }
 
+
 /* terminal */
+
 .post pre.terminal {
     border: 1px solid #000;
     background-color: #333;
