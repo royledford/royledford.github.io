@@ -1,6 +1,6 @@
 .post-wrapper
   display: flex
-  flex-direction: row
+  flex-direction: column
   padding: 25px 10px
 
   .post-body
@@ -47,6 +47,10 @@
     padding-right: 10px
     text-transform: uppercase
 
+
+    &:visited
+      color: lighten($medium-gray, 20%)
+      
 .post
   margin-bottom: 30px
 
@@ -55,3 +59,10 @@
 
 .post-date
   margin-top: 0
+
+@media(min-width: 550px)
+  .post-wrapper
+    flex-direction: row
+
+  .post-body
+    padding: 0 20px

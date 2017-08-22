@@ -400,13 +400,16 @@ template {
   margin: 0;
   padding: 0; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; }
 
 html {
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 body {
@@ -415,7 +418,12 @@ body {
   font-size: small;
   text-align: center; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%; }
 
 h1 {
@@ -497,18 +505,38 @@ a:visited {
   border: 0; }
 
 /* standard */
+.post a:visited {
+  color: #444; }
+
+.post a {
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: dotted;
+     -moz-text-decoration-style: dotted;
+          text-decoration-style: dotted; }
+
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em; }
 
-.post ul, .post ol {
-  margin-left: 1.35em; }
+.post ul,
+.post ol {
+  margin-left: 1.35em;
+  margin-bottom: 1em; }
 
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .2em; }
+
+.post blockquote p {
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  padding: .75em .75em;
+  margin: 0 1em; }
+
+.post blockquote {
+  margin: 1em 1em; }
 
 .post pre code {
   border: none; }
@@ -1150,16 +1178,21 @@ header ul.nav-list {
       header ul.nav-list a {
         font-size: 18px;
         padding: 20px 20px; } }
-  @media (max-width: 415px) {
+  @media (max-width: 600px) {
     header ul.nav-list .logo {
-      height: 50px;
-      width: 50px; } }
+      width: 198px; } }
+  @media (max-width: 500px) {
+    header ul.nav-list .logo {
+      width: 98px; } }
+  @media (max-width: 400px) {
+    header ul.nav-list .navbutton a {
+      padding: 20px 10px; } }
 
 .post-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding: 25px 10px; }
   .post-wrapper .post-body {
     display: -ms-flexbox;
@@ -1200,6 +1233,8 @@ header ul.nav-list {
     padding-left: 10px;
     padding-right: 10px;
     text-transform: uppercase; }
+    .post-wrapper .post-tag-cloud-item:visited {
+      color: #777777; }
 
 .post {
   margin-bottom: 30px; }
@@ -1209,6 +1244,13 @@ header ul.nav-list {
 
 .post-date {
   margin-top: 0; }
+
+@media (min-width: 550px) {
+  .post-wrapper {
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .post-body {
+    padding: 0 20px; } }
 
 section.posts .posts-wrap {
   max-width: 600px;
