@@ -5,7 +5,7 @@ date:   2017-04-19 09:11:03
 categories: blog
 tags: [web design, mobile]
 img:    "typ-banner.jpg"
-img-alt: "Red Cuck Taylors"
+img-alt: "Red Chuck Taylors"
 ---
 While I was working on my personal website I ran into an issue viewing it in mobile browsers. Although I knew it needed to be responsive, I didn't plan for that from the beginning. I built the desktop version and was going to make  adjustments after to fit with viewing it on mobile browsers.
 

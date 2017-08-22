@@ -5,7 +5,7 @@ date:   2017-08-16
 categories: blog
 tags: [development, mac]
 img:    "typ-banner.jpg"
-img-alt: "Red Cuck Taylors"
+img-alt: "Red Chuck Taylors"
 ---
 ## Bashing Bash
 

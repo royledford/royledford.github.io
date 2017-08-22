@@ -3,9 +3,9 @@ layout: post
 title:  "Tips for switching to Mac from Windows."
 date:   2017-03-08 09:11:03
 categories: blog
-tags: [tech, mac, windows]
+tags: [tech, mac]
 img:    "typ-banner.jpg"
-img-alt: "Red Cuck Taylors"
+img-alt: "Red Chuck Taylors"
 ---
 Are you a windows user and have switched to a Mac. I've done the same and have some tips to make the process a little easier.
 
