@@ -5,6 +5,8 @@ img:    "typ-banner.jpg"
 img-alt: "Red Cuck Taylors"
 date:   2017-08-16
 tags: [development, mac]
+img:    "typ-banner.jpg"
+img-alt: "Red Cuck Taylors"
 ---
 If you develop web sites one of the first things people won't see on your the <head>. This invisible, but crazy important, part of the page can be overlooked when putting site together.
 

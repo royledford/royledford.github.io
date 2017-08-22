@@ -129,7 +129,7 @@ gulp.task('watch', function() {
     gulp.watch(['dev-assets/css/**/*.sass', 'dev-assets/css/**/*.scss'], ['sass']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
     gulp.watch('_jadefiles/*.html', ['jade-html']);
-    gulp.watch('dev-assets/img/*', ['image']);
+    gulp.watch('dev-assets/img/**/*', ['image']);
     gulp.watch('_tags/*.html', ['jekyll-rebuild']);
     gulp.watch('project-pages/*.html', ['jekyll-rebuild']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*', 'dev-assets/js/*.js'], ['jekyll-rebuild']);

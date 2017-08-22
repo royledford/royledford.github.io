@@ -4,6 +4,8 @@ title:  "Quick Guide to Github"
 date:   2017-07-15 09:11:03
 categories: blog
 tags: [github, code]
+img:    "typ-banner.jpg"
+img-alt: "Red Cuck Taylors"
 ---
 This is just a quick guide to how to use Git and Github.
 
