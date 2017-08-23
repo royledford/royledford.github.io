@@ -195,46 +195,67 @@ function removeClassFromArray(elList, className) {
     }
 };
 
-//
-//   //-----------------------------------------
-//   // Setup var and handle window scroll events
-//   //-----------------------------------------
-//   var didScroll = false;
-//   var lastScrollTop = 0; // used by header scroll
-//
+
+
+
+
+//-----------------------------------------
+// Setup var and handle window scroll events
+//-----------------------------------------
+var didScroll = false;
+var lastScrollTop = 0; // used by header scroll
+
 //   $(window).scroll(function(event) {
 //     didScroll = true;
 //   });
 //
-//   // only call our functions on an interval to not interfere with user scrolling
-//   setInterval(function() {
-//     if (didScroll) {
-//       windowdidScroll();
-//       didScroll = false;
-//     }
-//   }, 150);
-//
-//   function windowdidScroll() {
-//
-//     // Place calls to functions that react to window scrolling here.
-//     launchWorkSection();
-//     headerScroll();
-//
-//   };
-//
-//
-//   //-----------------------------------------
-//   // Move the work thumbs on screen when the user scrolls down.
-//   //-----------------------------------------
-//   function launchWorkSection() {
-//     var scrollPosition = $(window).scrollTop();
-//     var windowHeight = $(window).height();
-//     var workTop = $('.home-work').position().top;
-//
-//     if (scrollPosition >= (workTop / 4)) {
-//       $('.work-wrap').addClass('launched');
-//     };
-//   };
+
+window.addEventListener('scroll', function() {
+    didScroll = true;
+});
+
+// only call our functions on an interval to not interfere with user scrolling
+setInterval(function() {
+    if (didScroll) {
+        windowdidScroll();
+        didScroll = false;
+    }
+}, 150);
+
+function windowdidScroll() {
+    // Place calls to functions that react to window scrolling here.
+    // launchWorkSection();
+    headerScroll();
+
+};
+
+function headerScroll() {
+    var navBar = document.getElementsByClassName('nav-bar')[0];
+    var docBody = document.body;
+    var docWindow = window;
+    var delta = 30;
+    var navbarHeight = navBar.offsetHeight;
+    var st = docBody.scrollTop;
+
+
+    // if (Math.abs(lastScrollTop - st) <= delta)
+    //     return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up
+    if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        navBar.classList.remove('nav-down')
+        navBar.classList.add('nav-up');
+    } else {
+        // Scroll Up
+        navBar.classList.remove('nav-up')
+        navBar.classList.add('nav-down');
+    };
+    lastScrollTop = st;
+};
+
+
+//jquery versions
 //
 //   //-----------------------------------------
 //   // hide the header when scrolling down, show when scrolling up
