@@ -1589,6 +1589,82 @@ section#salut hr {
     top: 700px;
     left: 233px; } }
 
+section#sonic .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#sonic h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#sonic h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#sonic p, section#sonic h3 {
+  color: #aaaaaa; }
+
+section#sonic img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#sonic .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#sonic .copy h3 {
+    text-align: center; }
+
+section#sonic hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#sonic .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 2200px; }
+  section#sonic .img-1 {
+    position: absolute;
+    width: 557px;
+    top: 300px;
+    left: 0; }
+  section#sonic .img-2 {
+    position: absolute;
+    width: 557px;
+    top: 550px;
+    left: 405px; }
+  section#sonic .copy-section-1 {
+    position: absolute;
+    top: 400px;
+    left: 474px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#sonic .img-3 {
+    position: absolute;
+    width: 728px;
+    top: 900px;
+    left: 33px; }
+  section#sonic .img-4 {
+    position: absolute;
+    width: 695px;
+    top: 1350px;
+    left: 233px; } }
+
 footer {
   position: relative;
   bottom: 0;
