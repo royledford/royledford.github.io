@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+//- How to add a project page.
+//---------------------------------------------------------
+//- - Add a new ./project-pages/project-[myProject].html file
+//- - Add a new ./_jadfiles/_project-[myProject].jade file
+//- - Add a new ./dev-assets/3-layouts/_project-[myProject].sass file
+//- - Update ./dev-assets/3-layouts/_-layouts-index.sass to import the projects sass file.
+//- - Update ./_jadfiles/_projects.jade to include the thumbnail/copy/link
+
 section#projects
 
   .content
@@ -19,6 +28,21 @@ section#projects
             p.description Design / Front End Development
             a(href="/project-pages/project-sonic.html").project-link
 
+      figure.project-card
+        img(src="assets/img/work-thumbs/mytime-thumb.jpg")
+        figcaption
+          .project-info
+            h2.title My Investment Time
+            p.description Design / Front End Development
+            a(href="/project-pages/project-mytime.html").project-link
+
+      figure.project-card
+        img(src="assets/img/work-thumbs/salut-thumb.jpg")
+        figcaption
+          .project-info
+            h2.title Salut
+            p.description Design / Full Stack Development
+            a(href="/project-pages/project-salut.html").project-link
 
       figure.project-card
         img(src="/assets/img/work-thumbs/ducati-thumb.jpg")
@@ -28,13 +52,6 @@ section#projects
             p.description Product Design
             a(href="/project-pages/project-pza.html").project-link
 
-      figure.project-card
-        img(src="assets/img/work-thumbs/salut-thumb.jpg")
-        figcaption
-          .project-info
-            h2.title Salut
-            p.description Design / Full Stack Development
-            a(href="/project-pages/project-salut.html").project-link
 
 
 

@@ -1665,6 +1665,82 @@ section#sonic hr {
     top: 1350px;
     left: 233px; } }
 
+section#mytime .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#mytime h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#mytime h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#mytime p, section#mytime h3 {
+  color: #aaaaaa; }
+
+section#mytime img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#mytime .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#mytime .copy h3 {
+    text-align: center; }
+
+section#mytime hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#mytime .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 2200px; }
+  section#mytime .img-1 {
+    position: absolute;
+    width: 557px;
+    top: 260px;
+    left: 0; }
+  section#mytime .img-2 {
+    position: absolute;
+    width: 557px;
+    top: 630px;
+    left: 405px; }
+  section#mytime .copy-section-1 {
+    position: absolute;
+    top: 420px;
+    left: 524px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#mytime .img-3 {
+    position: absolute;
+    width: 428px;
+    top: 900px;
+    left: 20px; }
+  section#mytime .img-4 {
+    position: absolute;
+    width: 495px;
+    top: 1280px;
+    left: 233px; } }
+
 footer {
   position: relative;
   bottom: 0;
