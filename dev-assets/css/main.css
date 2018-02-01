@@ -1648,7 +1648,7 @@ section#sonic hr {
     left: 405px; }
   section#sonic .copy-section-1 {
     position: absolute;
-    top: 400px;
+    top: 360px;
     left: 474px;
     width: 395px;
     padding: 20px;
@@ -1664,6 +1664,310 @@ section#sonic hr {
     width: 695px;
     top: 1350px;
     left: 233px; } }
+
+section#reactsvgmeters .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#reactsvgmeters h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#reactsvgmeters h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#reactsvgmeters p, section#reactsvgmeters h3 {
+  color: #aaaaaa; }
+
+section#reactsvgmeters img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#reactsvgmeters .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#reactsvgmeters .copy h3 {
+    text-align: center; }
+
+section#reactsvgmeters hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#reactsvgmeters .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 1400px; }
+  section#reactsvgmeters .img-1 {
+    position: absolute;
+    width: 720px;
+    top: 300px;
+    left: 0; }
+  section#reactsvgmeters .img-2 {
+    position: absolute;
+    width: 257px;
+    top: 750px;
+    left: 60px; }
+  section#reactsvgmeters .copy-section-1 {
+    position: absolute;
+    top: 600px;
+    left: 574px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#reactsvgmeters .img-3 {
+    position: absolute;
+    width: 628px;
+    top: 900px;
+    left: 363px; }
+  section#reactsvgmeters .img-4 {
+    position: absolute;
+    width: 695px;
+    top: 1350px;
+    left: 233px; } }
+
+section#fashion .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#fashion h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#fashion h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#fashion p, section#fashion h3 {
+  color: #aaaaaa; }
+
+section#fashion img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#fashion .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#fashion .copy h3 {
+    text-align: center; }
+
+section#fashion hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#fashion .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 1800px; }
+  section#fashion .img-1 {
+    position: absolute;
+    width: 757px;
+    top: 300px;
+    left: 0; }
+  section#fashion .img-2 {
+    position: absolute;
+    width: 557px;
+    top: 950px;
+    left: 405px; }
+  section#fashion .copy-section-1 {
+    position: absolute;
+    top: 810px;
+    left: 44px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#fashion .img-3 {
+    position: absolute;
+    width: 728px;
+    top: 1250px;
+    left: 10px; }
+  section#fashion .img-4 {
+    position: absolute;
+    width: 695px;
+    top: 1350px;
+    left: 233px; } }
+
+section#todo .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#todo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#todo h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#todo p, section#todo h3 {
+  color: #aaaaaa; }
+
+section#todo img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#todo .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#todo .copy h3 {
+    text-align: center; }
+
+section#todo hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#todo .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 1500px; }
+  section#todo .img-1 {
+    position: absolute;
+    width: 357px;
+    top: 300px;
+    left: 0; }
+  section#todo .img-2 {
+    position: absolute;
+    width: 357px;
+    top: 880px;
+    left: 480px; }
+  section#todo .copy-section-1 {
+    position: absolute;
+    top: 610px;
+    left: 344px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#todo .img-3 {
+    position: absolute;
+    width: 228px;
+    top: 480px;
+    left: 610px; }
+  section#todo .img-4 {
+    position: absolute;
+    width: 695px;
+    top: 1350px;
+    left: 233px; } }
+
+section#speedetab .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  padding: 0 20px; }
+
+section#speedetab h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #aaaaaa;
+  line-height: 70%; }
+
+section#speedetab h2 {
+  margin-top: 0;
+  font-size: 2opx;
+  font-weight: 300;
+  color: #aaaaaa; }
+
+section#speedetab p, section#speedetab h3 {
+  color: #aaaaaa; }
+
+section#speedetab img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0; }
+
+section#speedetab .copy {
+  text-align: left;
+  margin: 30px 0; }
+  section#speedetab .copy h3 {
+    text-align: center; }
+
+section#speedetab hr {
+  border-color: #aaaaaa; }
+
+@media (min-width: 768px) {
+  section#speedetab .wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    height: 2200px; }
+  section#speedetab .img-1 {
+    position: absolute;
+    width: 557px;
+    top: 230px;
+    left: 0; }
+  section#speedetab .img-2 {
+    position: absolute;
+    width: 457px;
+    top: 350px;
+    left: 505px; }
+  section#speedetab .copy-section-1 {
+    position: absolute;
+    top: 400px;
+    left: 474px;
+    width: 395px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1; }
+  section#speedetab .img-3 {
+    position: absolute;
+    width: 428px;
+    top: 650px;
+    left: 505px; }
+  section#speedetab .img-4 {
+    position: absolute;
+    width: 495px;
+    top: 950px;
+    left: 505px; } }
 
 section#mytime .wrapper {
   display: -ms-flexbox;

@@ -1,11 +1,3 @@
-//---------------------------------------------------------
-//- How to add a project page.
-//---------------------------------------------------------
-//- - Add a new ./project-pages/project-[myProject].html file
-//- - Add a new ./_jadfiles/_project-[myProject].jade file
-//- - Add a new ./dev-assets/3-layouts/_project-[myProject].sass file
-//- - Update ./dev-assets/3-layouts/_-layouts-index.sass to import the projects sass file.
-//- - Update ./_jadfiles/_projects.jade to include the thumbnail/copy/link
 
 section#projects
 
@@ -29,12 +21,44 @@ section#projects
             a(href="/project-pages/project-sonic.html").project-link
 
       figure.project-card
+        img(src="assets/img/work-thumbs/speedetab-thumb.jpg")
+        figcaption
+          .project-info
+            h2.title SpeedETab
+            p.description Front End Development
+            a(href="/project-pages/project-speedetab.html").project-link
+
+      figure.project-card
+        img(src="assets/img/work-thumbs/reactsvgmeters-thumb.jpg")
+        figcaption
+          .project-info
+            h2.title React SVG Meters
+            p.description Design / Front End Development
+            a(href="/project-pages/project-reactsvgmeters.html").project-link
+
+       figure.project-card
         img(src="assets/img/work-thumbs/mytime-thumb.jpg")
         figcaption
           .project-info
             h2.title My Investment Time
             p.description Design / Front End Development
             a(href="/project-pages/project-mytime.html").project-link
+
+      figure.project-card
+        img(src="assets/img/work-thumbs/fashionlogin-thumb.jpg")
+        figcaption
+          .project-info
+            h2.title Fashion Login
+            p.description Design / Front End Development
+            a(href="/project-pages/project-fashionlogin.html").project-link
+
+      figure.project-card
+        img(src="assets/img/work-thumbs/todo-thumb.jpg")
+        figcaption
+          .project-info
+            h2.title Todo in React
+            p.description Design / Front End Development
+            a(href="/project-pages/project-todo.html").project-link
 
       figure.project-card
         img(src="assets/img/work-thumbs/salut-thumb.jpg")
