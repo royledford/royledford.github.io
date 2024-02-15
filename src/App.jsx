@@ -8,9 +8,9 @@ function App() {
   return (
     <div className={cn(cs.wrapper)}>
       <div className={cs.header}>
-        <Menu className={cs.menu} />
+        {/* <Menu className={cs.menu} /> */}
         <div className={cs.headerLinks}>
-          <NavLink
+          {/* <NavLink
             to="https://www.linkedin.com/in/royledford/"
             tooltip="Blog"
             className={cs.navLink}>
@@ -21,7 +21,7 @@ function App() {
             tooltip="Projects"
             className={cs.navLink}>
             Projects
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             icon={<Linkedin />}
