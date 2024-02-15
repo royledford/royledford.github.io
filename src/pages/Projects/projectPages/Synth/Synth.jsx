@@ -1,3 +1,6 @@
+import Article from '../../../../components/Article/Article'
+import content from './synth.md'
+
 export default function Synth() {
-  return <p>test</p>
+  return <Article markdownContent={content} />
 }
