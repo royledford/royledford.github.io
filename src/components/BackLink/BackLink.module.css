@@ -1,0 +1,13 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-40p);
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.35s ease;
+}
+
+.link:hover {
+  background-color: var(--primary-20p);
+}
