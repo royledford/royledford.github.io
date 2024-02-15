@@ -18,9 +18,9 @@ export default function Layout() {
             className={cs.navLink}>
             Blog
           </NavLink> */}
-          <NavLink to="/projects" tooltip="Projects" className={cs.navLink}>
+          {/* <NavLink to="/projects" tooltip="Projects" className={cs.navLink}>
             Projects
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             newTab
