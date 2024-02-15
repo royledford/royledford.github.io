@@ -2,6 +2,7 @@ import cs from './App.module.css'
 import cn from 'classnames'
 import { Menu, Linkedin, Github } from 'feather-icons-react'
 import Link from './components/Link/Link'
+import NavLink from './components/NavLink/NavLink'
 
 function App() {
   return (
@@ -9,23 +10,29 @@ function App() {
       <div className={cs.header}>
         <Menu className={cs.menu} />
         <div className={cs.headerLinks}>
-          <Link
+          <NavLink
             to="https://www.linkedin.com/in/royledford/"
+            tooltip="Blog"
             className={cs.navLink}>
             Blog
-          </Link>
-          <Link to="https://github.com/royledford" className={cs.navLink}>
+          </NavLink>
+          <NavLink
+            to="https://github.com/royledford"
+            tooltip="Projects"
+            className={cs.navLink}>
             Projects
-          </Link>
+          </NavLink>
 
-          <Link
+          <NavLink
             icon={<Linkedin />}
             to="https://www.linkedin.com/in/royledford/"
-            className={cs.navLink}></Link>
-          <Link
+            tooltip="linkedin"
+            className={cs.navLink}></NavLink>
+          <NavLink
             icon={<Github />}
             to="https://github.com/royledford"
-            className={cs.navLink}></Link>
+            tooltip="Github"
+            className={cs.navLink}></NavLink>
         </div>
       </div>
 
@@ -49,18 +56,13 @@ function App() {
             deployment, created an in-depth design system, implemented real-time
             video and chat messaging.
           </li>
+          <li>
+            Prior to that I was a staff engineer and manager of an engineering
+            team building internal tooling for 3D modeling, 2D drawing
+            extraction, and material management at
+            <Link to="https://www.woodplc.com/">Wood Group</Link>.
+          </li>
         </ul>
-
-        <div className="links">
-          <a href="mailto:roy@royledford.com">
-            <span style={{ marginRight: '40px' }}>roy@royledford.com</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/royledford/"
-            className="linkedin">
-            <span>linkedin.com/in/royledford/</span>
-          </a>
-        </div>
       </div>
     </div>
   )
