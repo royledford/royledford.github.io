@@ -1,0 +1,59 @@
+/* utils */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.menu {
+  color: var(--primary-40p);
+}
+
+.headerLinks {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 2rem;
+  text-shadow: #c1c1c1 0 0 12px;
+}
+
+.navLink {
+  margin-right: 1.25rem;
+}
+
+.content p {
+  line-height: 1rem;
+  margin-bottom: 2rem;
+}
+
+.content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.content li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}

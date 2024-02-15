@@ -1,0 +1,35 @@
+.wrap {
+  display: inline-block;
+  flex-grow: 0;
+  line-height: 1rem;
+  height: 1rem;
+  margin-left: 0.25rem;
+}
+
+.wrap:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.25s ease, background-color 0.25s ease;
+}
+
+.wrap:hover:after {
+  width: 100%;
+  background: var(--primary-40p);
+}
+
+.iconLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.iconLink svg {
+  height: 20px;
+  width: 20px;
+}
