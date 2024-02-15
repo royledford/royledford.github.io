@@ -1,0 +1,27 @@
+.listItem {
+  list-style-type: none;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5em;
+  transition: background-color 0.35s ease;
+}
+
+.listItem:has(a:hover) {
+  background-color: var(--primary-20p);
+}
+
+.listItem h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.listItem p {
+  margin: 0;
+}
+
+.listItem a,
+.listItem a:visited {
+  text-decoration: none;
+  color: var(--text);
+}

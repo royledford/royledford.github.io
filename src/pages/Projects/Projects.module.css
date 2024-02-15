@@ -1,0 +1,10 @@
+.wrap {
+  margin: 0 auto;
+  margin-top: 6rem;
+  max-width: 600px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}

@@ -17,24 +17,25 @@ export default function Layout() {
             tooltip="Blog"
             className={cs.navLink}>
             Blog
-          </NavLink>
-          <NavLink
-            to="https://github.com/royledford"
-            tooltip="Projects"
-            className={cs.navLink}>
+          </NavLink> */}
+          {/* <NavLink to="/projects" tooltip="Projects" className={cs.navLink}>
             Projects
           </NavLink> */}
 
           <NavLink
+            newTab
             icon={<Linkedin />}
             to="https://www.linkedin.com/in/royledford/"
             tooltip="linkedin"
-            className={cs.navLink}></NavLink>
+            className={cs.navLink}
+          />
           <NavLink
+            newTab
             icon={<Github />}
             to="https://github.com/royledford"
             tooltip="Github"
-            className={cs.navLink}></NavLink>
+            className={cs.navLink}
+          />
         </div>
       </div>
       <div className="content">
