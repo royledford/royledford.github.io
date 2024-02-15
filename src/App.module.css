@@ -36,7 +36,7 @@
 
 .content h1 {
   font-size: 2rem;
-  text-shadow: #c1c1c1 0 0 12px;
+  text-shadow: var(--primary) 0 0 40px;
 }
 
 .navLink {
