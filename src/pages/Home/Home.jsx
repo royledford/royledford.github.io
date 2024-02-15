@@ -1,41 +1,10 @@
-import cs from './App.module.css'
+import cs from './Home.module.css'
 import cn from 'classnames'
-import { Menu, Linkedin, Github } from 'feather-icons-react'
-import Link from './components/Link/Link'
-import NavLink from './components/NavLink/NavLink'
+import Link from '../../components/Link/Link'
 
-function App() {
+function Home() {
   return (
     <div className={cn(cs.wrapper)}>
-      <div className={cs.header}>
-        {/* <Menu className={cs.menu} /> */}
-        <div className={cs.headerLinks}>
-          {/* <NavLink
-            to="https://www.linkedin.com/in/royledford/"
-            tooltip="Blog"
-            className={cs.navLink}>
-            Blog
-          </NavLink>
-          <NavLink
-            to="https://github.com/royledford"
-            tooltip="Projects"
-            className={cs.navLink}>
-            Projects
-          </NavLink> */}
-
-          <NavLink
-            icon={<Linkedin />}
-            to="https://www.linkedin.com/in/royledford/"
-            tooltip="linkedin"
-            className={cs.navLink}></NavLink>
-          <NavLink
-            icon={<Github />}
-            to="https://github.com/royledford"
-            tooltip="Github"
-            className={cs.navLink}></NavLink>
-        </div>
-      </div>
-
       <div className={cs.content}>
         <h1>Roy Ledford</h1>
         <p>Hi, I&apos;m a frontend software developer.</p>
@@ -68,4 +37,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
