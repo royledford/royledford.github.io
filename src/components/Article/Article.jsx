@@ -7,8 +7,6 @@ import cn from 'classnames'
 import cs from './Article.module.css'
 import Link from '../Link/Link'
 
-
-
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { materialOceanic } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import BackLink from '../../components/BackLink/BackLink'
@@ -24,7 +22,6 @@ export default function Article({ markdownContent, className }) {
       })
   }, [markdownContent])
 
-
   return (
     <div className={cn(cs.wrap, className)}>
       <BackLink to="/projects" />
@@ -38,6 +35,7 @@ export default function Article({ markdownContent, className }) {
             return <Link to={props.href}>{props.children}</Link>
           },
           code(props) {
+            // eslint-disable-next-line no-unused-vars
             const { children, className, node, ...rest } = props
             const match = /language-(\w+)/.exec(className || '')
             return match ? (
