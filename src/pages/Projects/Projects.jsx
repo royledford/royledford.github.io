@@ -13,20 +13,6 @@ export default function Synth() {
           description="A synthesizer using Web Audio API and neumorphism design"
           to="/projects/synth"
         />
-        <ProjectItem
-          name="Synth"
-          description="A synthesizer using Web Audio API and neumorphic design"
-          to="/"
-        />
-        <ProjectItem
-          name="Synth"
-          description="A synthesizer using Web Audio API and neumorphic design"
-          to="test"
-        />
-        <ProjectItem
-          name="Synth"
-          description="A synthesizer using Web Audio API and neumorphic design"
-        />
       </ul>
     </div>
   )
