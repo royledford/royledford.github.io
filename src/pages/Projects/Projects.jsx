@@ -13,6 +13,11 @@ export default function Synth() {
           description="A synthesizer using Web Audio API and neumorphism design"
           to="/projects/synth"
         />
+        <ProjectItem
+          name="GP Eats"
+          description="Web app to display nearby restaurants using Google Places API and React"
+          to="/projects/gp-eats"
+        />
       </ul>
     </div>
   )
