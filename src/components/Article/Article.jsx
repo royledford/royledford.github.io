@@ -5,6 +5,9 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import cn from 'classnames'
 import cs from './Article.module.css'
+import Link from '../Link/Link'
+
+
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { materialOceanic } from 'react-syntax-highlighter/dist/esm/styles/prism'
@@ -19,7 +22,8 @@ export default function Article({ markdownContent, className }) {
       .then((md) => {
         setText(md)
       })
-  }, [])
+  }, [markdownContent])
+
 
   return (
     <div className={cn(cs.wrap, className)}>
@@ -29,6 +33,10 @@ export default function Article({ markdownContent, className }) {
         remarkPlugins={[remarkGfm]}
         children={text}
         components={{
+          a(props) {
+            console.log(props)
+            return <Link to={props.href}>{props.children}</Link>
+          },
           code(props) {
             const { children, className, node, ...rest } = props
             const match = /language-(\w+)/.exec(className || '')
