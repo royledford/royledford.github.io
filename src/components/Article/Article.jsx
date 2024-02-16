@@ -6,6 +6,9 @@ import remarkGfm from 'remark-gfm'
 import cn from 'classnames'
 import cs from './Article.module.css'
 import Link from '../Link/Link'
+
+
+
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { materialOceanic } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import BackLink from '../../components/BackLink/BackLink'
@@ -20,6 +23,7 @@ export default function Article({ markdownContent, className }) {
         setText(md)
       })
   }, [markdownContent])
+
 
   return (
     <div className={cn(cs.wrap, className)}>
