@@ -9,8 +9,19 @@ import rehypeRaw from 'rehype-raw'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { materialOceanic } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import BackLink from '../../components/BackLink/BackLink'
+import { useEffect, useState } from 'react'
 
 export default function Article({ markdownContent, className }) {
+  const [text, setText] = useState('')
+
+  useEffect(() => {
+    fetch(markdownContent)
+      .then((response) => response.text())
+      .then((md) => {
+        setText(md)
+      })
+  }, [markdownContent])
+
   return (
     <div className={cn(cs.wrap, className)}>
       <BackLink to="/projects" />
@@ -18,7 +29,7 @@ export default function Article({ markdownContent, className }) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
-        children={markdownContent}
+        children={text}
         skipHtml={true}
         components={{
           a(props) {

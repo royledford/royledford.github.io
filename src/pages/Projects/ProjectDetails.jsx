@@ -1,31 +1,29 @@
-import { useEffect, useState } from 'react'
-import Article from '../../components/Article/Article'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import { projectList } from './projectList'
+import Synth from './projectDocs/Synth'
+import GPEats from './projectDocs/GPEats'
+import FashionLogin from './projectDocs/FashionLogin'
 
-export default function Synth() {
-  const [projectMd, setProjectMd] = useState(null)
+const Components = {
+  Synth,
+  GPEats,
+  FashionLogin,
+}
+
+// TODO: this would be better if it could import the .md file and render it.
+// But I couldn't get vite to figure our the paths properly for the dynamic import. :(
+// The general idea was to write the .md, add to projectList.js and that's it.
+export default function ProjectDetails() {
   const { project } = useParams()
-  const projectData = projectList[project]
 
-  useEffect(() => {
-    if (!project) {
-      throw new Error(`Project not found: ${project}`)
-    }
+  const comp = projectList[project].component
 
-    async function loadProject() {
-      const filename = `./projectDocs/${projectData.mdFile}?raw`
-      // const response = await fetch(filename)
-      // const text = await response.text()
+  if (!comp) {
+    throw new Error(
+      `Project not found: ${project}. Did you add it to projectList.js, create the .md, add the component, and add the import/update Components in ProjectDetails.jsx?`,
+    )
+  }
 
-      import(filename).then((content) => {
-        setProjectMd(content.default)
-      })
-      // setProjectMd(text)
-    }
-
-    loadProject()
-  }, [project, projectData.mdFile])
-
-  return <Article markdownContent={projectMd} />
+  return React.createElement(Components[comp])
 }

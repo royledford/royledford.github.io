@@ -3,7 +3,7 @@ import cs from './Projects.module.css'
 import BackLink from '../../components/BackLink/BackLink'
 import { projectList } from './projectList'
 
-export default function Synth() {
+export default function Projects() {
   return (
     <div className={cs.wrap}>
       <BackLink />
