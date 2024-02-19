@@ -22,4 +22,11 @@ export const projectList = {
     to: '/projects/fashion-login',
     mdFile: 'fashion-login.md',
   },
+  'my-time': {
+    name: 'My Investment Time',
+    component: 'MyTime',
+    description: 'Investment time project tracker with infinite scroll',
+    to: '/projects/my-time',
+    mdFile: 'my-time.md',
+  },
 }
