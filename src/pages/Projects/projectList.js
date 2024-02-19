@@ -22,6 +22,14 @@ export const projectList = {
     to: '/projects/fashion-login',
     mdFile: 'fashion-login.md',
   },
+  'react-svg-meters': {
+    name: 'React SVG Meters',
+    component: 'ReactSvgMeters',
+    description: 'NPM package for SVG meters',
+    to: '/projects/react-svg-meters',
+    mdFile: 'react-svg-meters.md',
+  },
+
   'my-time': {
     name: 'My Investment Time',
     component: 'MyTime',

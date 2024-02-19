@@ -6,6 +6,7 @@ import GPEats from './projectDocs/GPEats'
 import FashionLogin from './projectDocs/FashionLogin'
 import MyTime from './projectDocs/MyTime'
 import PZA from './projectDocs/PZA'
+import ReactSvgMeters from './projectDocs/ReactSvgMeters'
 
 const Components = {
   Synth,
@@ -13,6 +14,7 @@ const Components = {
   FashionLogin,
   MyTime,
   PZA,
+  ReactSvgMeters,
 }
 
 // TODO: this would be better if it could import the .md file and render it.
@@ -21,7 +23,9 @@ const Components = {
 export default function ProjectDetails() {
   const { project } = useParams()
 
-  const comp = projectList[project].component
+  const projectDetails = projectList[project]
+  console.log('projectDetails', projectDetails) // TODO: remove this
+  const comp = projectDetails.component
 
   if (!comp) {
     throw new Error(

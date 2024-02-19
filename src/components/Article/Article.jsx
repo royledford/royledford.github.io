@@ -33,7 +33,6 @@ export default function Article({ markdownContent, className }) {
         skipHtml={true}
         components={{
           a(props) {
-            console.log(props)
             return <Link to={props.href}>{props.children}</Link>
           },
           code(props) {

@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <div className={cs.wrap}>
       <BackLink />
-      <p>Some side projects I am working on.</p>
+      <p>Some previous projects I have worked on.</p>
       <ul className={cs.list}>
         {Object.keys(projectList).map((project) => {
           const { name, description, to } = projectList[project]
@@ -20,16 +20,6 @@ export default function Projects() {
             />
           )
         })}
-        {/* <ProjectItem
-          name="Synth"
-          description="A synthesizer using Web Audio API and neumorphism design"
-          to="/projects/synth"
-        />
-        <ProjectItem
-          name="GP Eats"
-          description="Web app to display nearby restaurants using Google Places API and React"
-          to="/projects/gp-eats"
-        /> */}
       </ul>
     </div>
   )
