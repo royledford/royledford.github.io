@@ -29,4 +29,11 @@ export const projectList = {
     to: '/projects/my-time',
     mdFile: 'my-time.md',
   },
+  pza: {
+    name: 'PZA Parlour Motorcycles',
+    component: 'PZA',
+    description: 'PZA Parlour Motorcycles interior design and branding',
+    to: '/projects/pza',
+    mdFile: 'pza.md',
+  },
 }

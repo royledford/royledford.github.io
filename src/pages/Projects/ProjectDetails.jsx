@@ -5,12 +5,14 @@ import Synth from './projectDocs/Synth'
 import GPEats from './projectDocs/GPEats'
 import FashionLogin from './projectDocs/FashionLogin'
 import MyTime from './projectDocs/MyTime'
+import PZA from './projectDocs/PZA'
 
 const Components = {
   Synth,
   GPEats,
   FashionLogin,
   MyTime,
+  PZA,
 }
 
 // TODO: this would be better if it could import the .md file and render it.
