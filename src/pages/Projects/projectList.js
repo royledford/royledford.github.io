@@ -15,6 +15,13 @@ export const projectList = {
     to: '/projects/gp-eats',
     mdFile: 'gp-eats.md',
   },
+  salut: {
+    name: 'Salut App',
+    component: 'Salut',
+    description: 'A fun app to choose the next shot to drink',
+    to: '/projects/salut',
+    mdFile: 'salut.md',
+  },
   'fashion-login': {
     name: 'Fashion Login',
     component: 'FashionLogin',
