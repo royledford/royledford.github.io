@@ -10,6 +10,7 @@ import ReactSvgMeters from './projectDocs/ReactSvgMeters'
 import Salut from './projectDocs/Salut'
 import Sonic from './projectDocs/Sonic'
 import Speedetab from './projectDocs/Speedetab'
+import Todo from './projectDocs/Todo'
 
 const Components = {
   Synth,
@@ -21,6 +22,7 @@ const Components = {
   Salut,
   Sonic,
   Speedetab,
+  Todo,
 }
 
 // TODO: this would be better if it could import the .md file and render it.

@@ -43,6 +43,13 @@ export const projectList = {
     to: '/projects/fashion-login',
     mdFile: 'fashion-login.md',
   },
+  // todo: {
+  //   name: 'Todo App challenge',
+  //   component: 'Todo',
+  //   description: 'Todo app 8 hour challenge',
+  //   to: '/projects/todo',
+  //   mdFile: 'todo.md',
+  // },
   'react-svg-meters': {
     name: 'React SVG Meters',
     component: 'ReactSvgMeters',
