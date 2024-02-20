@@ -13,10 +13,10 @@ Design was based on a mobile-first approach so it would usable while members wal
 Unfortunately the co-working space and most of the nearby places have since closed. :( It was a great space and I met many wonderful people there.
 
 ### Mobile view
-![GP Eats app on an iphone X](/images/gp-eats/iphone-x-sm.png)
+![GP Eats app on an iphone X](/images/work-gp-eats/iphone-x-sm.png)
 
 ### Tablet / Desktop view
-![GP Eats app on a table / desktop](/images/gp-eats/lrg-directions-sm.jpg)
+![GP Eats app on a table / desktop](/images/work-gp-eats/lrg-directions-sm.jpg)
 
 
 

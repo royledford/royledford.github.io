@@ -13,16 +13,16 @@ The HOC uses ReactCssTransitions to control enter and leave animations.
 
 
 ### Static View
-<img src="/images/fashion-login/signup-email.jpg" alt="Example Login form" style="width: 600px">
+<img src="/images/work-fashion-login/signup-email.jpg" alt="Example Login form" style="width: 600px">
 
 ### Enter Email
 <video width="600"  controls autoplay loop>
-  <source src="/images/fashion-login/email.mp4" type="video/mp4" >
+  <source src="/images/work-fashion-login/email.mp4" type="video/mp4" >
 </video>
 
 
 ### Incorrect Password
 <video width="600"  controls autoplay loop>
-  <source src="/images/fashion-login/password.mp4" type="video/mp4" >
+  <source src="/images/work-fashion-login/password.mp4" type="video/mp4" >
 </video>
 
