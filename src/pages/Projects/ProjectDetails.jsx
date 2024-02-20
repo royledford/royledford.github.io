@@ -8,6 +8,7 @@ import MyTime from './projectDocs/MyTime'
 import PZA from './projectDocs/PZA'
 import ReactSvgMeters from './projectDocs/ReactSvgMeters'
 import Salut from './projectDocs/Salut'
+import Sonic from './projectDocs/Sonic'
 
 const Components = {
   Synth,
@@ -17,6 +18,7 @@ const Components = {
   PZA,
   ReactSvgMeters,
   Salut,
+  Sonic,
 }
 
 // TODO: this would be better if it could import the .md file and render it.

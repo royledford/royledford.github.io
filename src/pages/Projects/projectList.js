@@ -22,6 +22,13 @@ export const projectList = {
     to: '/projects/salut',
     mdFile: 'salut.md',
   },
+  sonic: {
+    name: 'Sonic Quiver Website',
+    component: 'Sonic',
+    description: 'Website design for Sonic Quiver music production company',
+    to: '/projects/sonic',
+    mdFile: 'sonic.md',
+  },
   'fashion-login': {
     name: 'Fashion Login',
     component: 'FashionLogin',
