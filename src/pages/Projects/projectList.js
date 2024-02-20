@@ -29,6 +29,13 @@ export const projectList = {
     to: '/projects/sonic',
     mdFile: 'sonic.md',
   },
+  speedetab: {
+    name: 'Speedetab Website',
+    component: 'Speedetab',
+    description: 'Website for Speedetab point of sale system',
+    to: '/projects/speedetab',
+    mdFile: 'speedetab.md',
+  },
   'fashion-login': {
     name: 'Fashion Login',
     component: 'FashionLogin',
