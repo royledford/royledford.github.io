@@ -1,0 +1,25 @@
+.logo {
+  position: relative;
+  width: 36px;
+  height: 46px;
+}
+
+.pathBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke: var(--primary-20p);
+  z-index: -1;
+}
+
+.path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
