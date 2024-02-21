@@ -3,6 +3,7 @@ import NavLink from './components/NavLink/NavLink'
 import cs from './Layout.module.css'
 import { Outlet, useLocation } from 'react-router-dom'
 import Home from './pages/Home/Home'
+import { Logo } from './components/Logo/Logo'
 
 export default function Layout() {
   const location = useLocation()
@@ -10,14 +11,8 @@ export default function Layout() {
   return (
     <div className={cs.wrapper}>
       <div className={cs.header}>
-        {/* <Menu className={cs.menu} /> */}
+        <Logo />
         <div className={cs.headerLinks}>
-          {/* <NavLink
-            to="https://www.linkedin.com/in/royledford/"
-            tooltip="Blog"
-            className={cs.navLink}>
-            Blog
-          </NavLink> */}
           <NavLink to="/projects" tooltip="Projects" className={cs.navLink}>
             Projects
           </NavLink>
