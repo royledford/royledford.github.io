@@ -15,6 +15,14 @@ export const projectList = {
     to: '/projects/gp-eats',
     mdFile: 'gp-eats.md',
   },
+  'flex-accordion': {
+    name: 'Flexbox Accordion Example',
+    component: 'FlexAccordion',
+    description:
+      'A simple example of using flexbox and flex-basis to build an accordion control',
+    to: '/projects/flex-accordion',
+    mdFile: 'flex-accordion.md',
+  },
   salut: {
     name: 'Salut App',
     component: 'Salut',

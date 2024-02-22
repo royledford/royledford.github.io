@@ -11,6 +11,7 @@ import Salut from './projectDocs/Salut'
 import Sonic from './projectDocs/Sonic'
 import Speedetab from './projectDocs/Speedetab'
 import Todo from './projectDocs/Todo'
+import FlexAccordion from './projectDocs/FlexAccordion'
 
 const Components = {
   Synth,
@@ -23,6 +24,7 @@ const Components = {
   Sonic,
   Speedetab,
   Todo,
+  FlexAccordion,
 }
 
 // TODO: this would be better if it could import the .md file and render it.
